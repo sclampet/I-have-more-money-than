@@ -46,7 +46,7 @@ extension HomeViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! AccountCell
         cell.account = accounts[indexPath.item]
-        setCornerRadiusAndShadow(on: cell)
+        setBorderAndShadow(on: cell)
         return cell
     }
     
@@ -71,9 +71,9 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
 
 //MARK: Helper Methods
 extension HomeViewController {
-    func setCornerRadiusAndShadow(on cell: UICollectionViewCell) {
-        cell.layer.cornerRadius = 20
-        cell.layer.masksToBounds = true
+    func setBorderAndShadow(on cell: UICollectionViewCell) {
+        cell.layer.borderColor = UIColor.gray.cgColor
+        cell.layer.borderWidth = 1
         
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOffset = CGSize(width: 0, height: 5.0)
