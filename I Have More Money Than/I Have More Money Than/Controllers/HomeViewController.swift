@@ -66,6 +66,13 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 25, left: 25, bottom: 25, right: 25)
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailsScreen = AccountDetailsViewController()
+        if let nav = navigationController {
+            nav.pushViewController(detailsScreen, animated: true)
+        }
+    }
 }
 
 
