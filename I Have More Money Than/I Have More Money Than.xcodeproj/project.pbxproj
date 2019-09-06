@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		60B3E8692322FAB200C1F970 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8682322FAB200C1F970 /* AppDelegate.swift */; };
-		60B3E86B2322FAB200C1F970 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E86A2322FAB200C1F970 /* ViewController.swift */; };
-		60B3E86E2322FAB200C1F970 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60B3E86C2322FAB200C1F970 /* Main.storyboard */; };
+		60B3E86B2322FAB200C1F970 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E86A2322FAB200C1F970 /* HomeViewController.swift */; };
 		60B3E8702322FAB300C1F970 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60B3E86F2322FAB300C1F970 /* Assets.xcassets */; };
 		60B3E8732322FAB300C1F970 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60B3E8712322FAB300C1F970 /* LaunchScreen.storyboard */; };
-		60B3E87E2322FAB300C1F970 /* I_Have_More_Money_ThanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E87D2322FAB300C1F970 /* I_Have_More_Money_ThanTests.swift */; };
+		60B3E87E2322FAB300C1F970 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E87D2322FAB300C1F970 /* HomeViewControllerTests.swift */; };
 		60B3E8892322FAB300C1F970 /* I_Have_More_Money_ThanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8882322FAB300C1F970 /* I_Have_More_Money_ThanUITests.swift */; };
+		60B3E89B2323020200C1F970 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E89A2323020200C1F970 /* BaseCell.swift */; };
+		60B3E89D232302AB00C1F970 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E89C232302AB00C1F970 /* AccountCell.swift */; };
+		60B3E89F2323075800C1F970 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E89E2323075800C1F970 /* Account.swift */; };
+		60B3E8A2232309FC00C1F970 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8A1232309FC00C1F970 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,17 +39,20 @@
 /* Begin PBXFileReference section */
 		60B3E8652322FAB200C1F970 /* I Have More Money Than.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "I Have More Money Than.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B3E8682322FAB200C1F970 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		60B3E86A2322FAB200C1F970 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		60B3E86D2322FAB200C1F970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60B3E86A2322FAB200C1F970 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		60B3E86F2322FAB300C1F970 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60B3E8722322FAB300C1F970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60B3E8742322FAB300C1F970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60B3E8792322FAB300C1F970 /* I Have More Money ThanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "I Have More Money ThanTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		60B3E87D2322FAB300C1F970 /* I_Have_More_Money_ThanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I_Have_More_Money_ThanTests.swift; sourceTree = "<group>"; };
+		60B3E87D2322FAB300C1F970 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 		60B3E87F2322FAB300C1F970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60B3E8842322FAB300C1F970 /* I Have More Money ThanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "I Have More Money ThanUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B3E8882322FAB300C1F970 /* I_Have_More_Money_ThanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I_Have_More_Money_ThanUITests.swift; sourceTree = "<group>"; };
 		60B3E88A2322FAB300C1F970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60B3E89A2323020200C1F970 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		60B3E89C232302AB00C1F970 /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
+		60B3E89E2323075800C1F970 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		60B3E8A1232309FC00C1F970 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				60B3E8672322FAB200C1F970 /* I Have More Money Than */,
+				60B3E8A0232309E300C1F970 /* Extensions */,
 				60B3E87C2322FAB300C1F970 /* I Have More Money ThanTests */,
 				60B3E8872322FAB300C1F970 /* I Have More Money ThanUITests */,
 				60B3E8662322FAB200C1F970 /* Products */,
@@ -98,11 +105,12 @@
 			isa = PBXGroup;
 			children = (
 				60B3E8682322FAB200C1F970 /* AppDelegate.swift */,
-				60B3E86A2322FAB200C1F970 /* ViewController.swift */,
-				60B3E86C2322FAB200C1F970 /* Main.storyboard */,
 				60B3E86F2322FAB300C1F970 /* Assets.xcassets */,
 				60B3E8712322FAB300C1F970 /* LaunchScreen.storyboard */,
 				60B3E8742322FAB300C1F970 /* Info.plist */,
+				60B3E898232301D200C1F970 /* Models */,
+				60B3E897232301CE00C1F970 /* Views */,
+				60B3E896232301C600C1F970 /* Controllers */,
 			);
 			path = "I Have More Money Than";
 			sourceTree = "<group>";
@@ -110,7 +118,7 @@
 		60B3E87C2322FAB300C1F970 /* I Have More Money ThanTests */ = {
 			isa = PBXGroup;
 			children = (
-				60B3E87D2322FAB300C1F970 /* I_Have_More_Money_ThanTests.swift */,
+				60B3E87D2322FAB300C1F970 /* HomeViewControllerTests.swift */,
 				60B3E87F2322FAB300C1F970 /* Info.plist */,
 			);
 			path = "I Have More Money ThanTests";
@@ -123,6 +131,47 @@
 				60B3E88A2322FAB300C1F970 /* Info.plist */,
 			);
 			path = "I Have More Money ThanUITests";
+			sourceTree = "<group>";
+		};
+		60B3E896232301C600C1F970 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				60B3E86A2322FAB200C1F970 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		60B3E897232301CE00C1F970 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				60B3E899232301F200C1F970 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		60B3E898232301D200C1F970 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				60B3E89E2323075800C1F970 /* Account.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		60B3E899232301F200C1F970 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				60B3E89A2323020200C1F970 /* BaseCell.swift */,
+				60B3E89C232302AB00C1F970 /* AccountCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		60B3E8A0232309E300C1F970 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				60B3E8A1232309FC00C1F970 /* Helpers.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +280,6 @@
 			files = (
 				60B3E8732322FAB300C1F970 /* LaunchScreen.storyboard in Resources */,
 				60B3E8702322FAB300C1F970 /* Assets.xcassets in Resources */,
-				60B3E86E2322FAB200C1F970 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +304,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60B3E86B2322FAB200C1F970 /* ViewController.swift in Sources */,
+				60B3E89F2323075800C1F970 /* Account.swift in Sources */,
+				60B3E8A2232309FC00C1F970 /* Helpers.swift in Sources */,
+				60B3E86B2322FAB200C1F970 /* HomeViewController.swift in Sources */,
+				60B3E89D232302AB00C1F970 /* AccountCell.swift in Sources */,
+				60B3E89B2323020200C1F970 /* BaseCell.swift in Sources */,
 				60B3E8692322FAB200C1F970 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60B3E87E2322FAB300C1F970 /* I_Have_More_Money_ThanTests.swift in Sources */,
+				60B3E87E2322FAB300C1F970 /* HomeViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +345,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		60B3E86C2322FAB200C1F970 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				60B3E86D2322FAB200C1F970 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		60B3E8712322FAB300C1F970 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
