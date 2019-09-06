@@ -18,16 +18,12 @@ class AccountCell: BaseCell {
             
             imageView.image = UIImage(named: account.imageName)
             
-            let color = UIColor(white: 1, alpha: 1)
-            let attributedText = NSMutableAttributedString(string: account.name, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 24, weight: .medium), NSAttributedString.Key.foregroundColor: color])
+
+            let color = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1)
+            let attributedText = NSMutableAttributedString(string: account.name, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 22, weight: .bold), NSAttributedString.Key.foregroundColor: color])
             
-            attributedText.append(NSAttributedString(string: "\n\n\(account.amount)", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18), NSAttributedString.Key.foregroundColor: color]))
-            
-//            let paragraphStyle = NSMutableParagraphStyle()
-//            paragraphStyle.alignment = .center
-//
-//            let length = attributedText.string.count
-//            attributedText.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSRange(location: 0, length: length))
+            attributedText.append(NSAttributedString(string: "\n\n$\(account.amount)", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20), NSAttributedString.Key.foregroundColor: color]))
+
             
             textView.attributedText = attributedText
         }
@@ -44,19 +40,32 @@ class AccountCell: BaseCell {
         let tv = UITextView()
         tv.text = ""
         tv.isEditable = false
-        tv.backgroundColor = .gray
+        tv.backgroundColor = .white
+        tv.contentInset = UIEdgeInsets(top: 5, left: 10, bottom: 0, right: 10)
+        tv.layer.borderWidth = 1
+        tv.layer.borderColor = UIColor.lightGray.cgColor
         return tv
     }()
     
+    let grayLayerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor(red: 220/255, green: 220/255, blue: 220/255, alpha: 0.1)
+        return view
+    }()
+    
+
     override func setupViews() {
         backgroundColor = .cyan
         addSubview(imageView)
         addSubview(textView)
+        imageView.addSubview(grayLayerView)
         
-        addConstraintsWithFormat(format: "V:|[v0]|", views: imageView)
+        addConstraintsWithFormat(format: "V:|[v0][v1(100)]|", views: imageView, textView)
         addConstraintsWithFormat(format: "H:|[v0]|", views: imageView)
+        addConstraintsWithFormat(format: "V:|[v0]|", views: grayLayerView)
+        addConstraintsWithFormat(format: "H:|[v0]|", views: grayLayerView)
         
-        addConstraintsWithFormat(format: "V:[v0(100)]|", views: textView)
         addConstraintsWithFormat(format: "H:|[v0]|", views: textView)
     }
+
 }

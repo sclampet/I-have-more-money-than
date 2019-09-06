@@ -71,14 +71,19 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
 
 //MARK: Helper Methods
 extension HomeViewController {
-    func setBorderAndShadow(on cell: UICollectionViewCell) {
+
+    
+    fileprivate func setBorderAndShadow(on cell: UICollectionViewCell) {
+
         cell.layer.borderColor = UIColor.gray.cgColor
         cell.layer.borderWidth = 1
         
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOffset = CGSize(width: 0, height: 5.0)
         cell.layer.shadowRadius = 4.0
+
         cell.layer.shadowOpacity = 0.7
+
         cell.layer.masksToBounds = false
         cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
     }
