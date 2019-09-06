@@ -9,6 +9,17 @@
 import UIKit
 
 class AccountCell: BaseCell {
+    
+    var account: Account? {
+        didSet {
+            guard let account = account else {
+                return
+            }
+            
+            print(account.name)
+        }
+    }
+    
     override func setupViews() {
         backgroundColor = .cyan
     }
