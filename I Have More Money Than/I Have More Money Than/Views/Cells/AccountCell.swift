@@ -16,11 +16,22 @@ class AccountCell: BaseCell {
                 return
             }
             
-            print(account.name)
+            imageView.image = UIImage(named: account.imageName)
         }
     }
     
+    let imageView: UIImageView = {
+        let iv = UIImageView()
+        iv.contentMode = .scaleAspectFill
+        iv.clipsToBounds = true
+        return iv
+    }()
+    
     override func setupViews() {
         backgroundColor = .cyan
+        addSubview(imageView)
+        
+        addConstraintsWithFormat(format: "V:|[v0]|", views: imageView)
+        addConstraintsWithFormat(format: "H:|[v0]|", views: imageView)
     }
 }
