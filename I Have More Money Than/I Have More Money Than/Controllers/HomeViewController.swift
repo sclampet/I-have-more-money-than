@@ -27,6 +27,7 @@ class HomeViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        collectionView.backgroundColor = .white
         collectionView.register(AccountCell.self, forCellWithReuseIdentifier: cellId)
     }
 }
@@ -45,8 +46,7 @@ extension HomeViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! AccountCell
         cell.account = accounts[indexPath.item]
-        cell.layer.cornerRadius = 20
-        cell.layer.masksToBounds = true
+        setCornerRadiusAndShadow(on: cell)
         return cell
     }
     
@@ -65,6 +65,22 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 25, left: 25, bottom: 25, right: 25)
+    }
+}
+
+
+//MARK: Helper Methods
+extension HomeViewController {
+    func setCornerRadiusAndShadow(on cell: UICollectionViewCell) {
+        cell.layer.cornerRadius = 20
+        cell.layer.masksToBounds = true
+        
+        cell.layer.shadowColor = UIColor.black.cgColor
+        cell.layer.shadowOffset = CGSize(width: 0, height: 5.0)
+        cell.layer.shadowRadius = 4.0
+        cell.layer.shadowOpacity = 0.7
+        cell.layer.masksToBounds = false
+        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
     }
 }
 
