@@ -18,6 +18,7 @@ class HomeViewController: UICollectionViewController {
     }
 }
 
+//MARK: DataSource & Delegate Methods
 extension HomeViewController {
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -34,6 +35,8 @@ extension HomeViewController {
     }
 }
 
+
+//MARK: FlowLayout Methods
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width, height: 350)
