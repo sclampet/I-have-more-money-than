@@ -13,7 +13,6 @@ class AccountDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(account)
         view.backgroundColor = .cyan
     }
 
