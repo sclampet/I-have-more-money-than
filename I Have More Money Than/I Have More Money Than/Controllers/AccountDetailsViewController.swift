@@ -9,10 +9,11 @@
 import UIKit
 
 class AccountDetailsViewController: UIViewController {
-
+    var account: Account?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(account)
         view.backgroundColor = .cyan
     }
 

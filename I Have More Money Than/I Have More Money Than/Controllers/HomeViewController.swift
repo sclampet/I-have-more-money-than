@@ -70,6 +70,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailsScreen = AccountDetailsViewController()
         if let nav = navigationController {
+            detailsScreen.account = accounts[indexPath.item]
             nav.pushViewController(detailsScreen, animated: true)
         }
     }
