@@ -82,15 +82,11 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
 extension HomeViewController {
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath) as! HeaderView
-        if isError {
-            header.titleLabel.text = "There was an issue getting your accounts."
-            header.subtitleLabel.text = "Please check your internet connection."
-        }
         return header
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: view.frame.width, height: 125)
+        return !isError ? CGSize(width: view.frame.width, height: 125) : CGSize.zero
     }
 }
 
