@@ -40,7 +40,8 @@ extension HomeViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if isError {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: errorCellId, for: indexPath)
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: errorCellId, for: indexPath) as! ErrorCell
+            cell.retryButton.addTarget(self, action: #selector(reloadCollectionView), for: .touchUpInside)
             return cell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! AccountCell
@@ -121,6 +122,7 @@ extension HomeViewController {
                 SVProgressHUD.dismiss()
                 DispatchQueue.main.async {
                     self.accounts = accountList
+                    self.isError = false
                     self.collectionView.reloadData()
                 }
             case .failure(let err):
@@ -144,6 +146,10 @@ extension HomeViewController {
         cell.layer.shadowOpacity = 0.7
         cell.layer.masksToBounds = false
         cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
+    }
+    
+    @objc fileprivate func reloadCollectionView() {
+        fetchAccounts()
     }
 }
 
