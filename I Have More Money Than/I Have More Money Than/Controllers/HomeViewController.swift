@@ -18,6 +18,7 @@ class HomeViewController: UICollectionViewController {
         super.viewDidLoad()
         fetchAccounts()
         setupCollectionView()
+        setupNavBar()
     }
 }
 
@@ -80,6 +81,13 @@ extension HomeViewController {
 
 //MARK: Helper Methods
 extension HomeViewController {
+    
+    fileprivate func setupNavBar() {
+        if let navBar = navigationController?.navigationBar {
+            navBar.isHidden = true
+        }
+    }
+    
     fileprivate func setupCollectionView() {
         collectionView.backgroundColor = .white
         collectionView.register(AccountCell.self, forCellWithReuseIdentifier: cellId)
