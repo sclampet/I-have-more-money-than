@@ -29,6 +29,13 @@ class HomeViewController: UICollectionViewController {
         super.viewDidLoad()
         collectionView.backgroundColor = .white
         collectionView.register(AccountCell.self, forCellWithReuseIdentifier: cellId)
+        
+        let networkManager = NetworkManager()
+        networkManager.getAccounts(from: BaseURL.allAccounts) { (response) in
+            print("RESPONSE: \(response)")
+        }
+        
+        
     }
 }
 

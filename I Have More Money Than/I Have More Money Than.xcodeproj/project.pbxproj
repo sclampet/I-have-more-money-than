@@ -18,6 +18,7 @@
 		60B3E89F2323075800C1F970 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E89E2323075800C1F970 /* Account.swift */; };
 		60B3E8A2232309FC00C1F970 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8A1232309FC00C1F970 /* Helpers.swift */; };
 		60B3E8A4232320D900C1F970 /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8A3232320D900C1F970 /* AccountDetailsViewController.swift */; };
+		60B3E8A823232F2F00C1F970 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8A723232F2F00C1F970 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		60B3E89E2323075800C1F970 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		60B3E8A1232309FC00C1F970 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		60B3E8A3232320D900C1F970 /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
+		60B3E8A723232F2F00C1F970 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				60B3E898232301D200C1F970 /* Models */,
 				60B3E897232301CE00C1F970 /* Views */,
 				60B3E896232301C600C1F970 /* Controllers */,
+				60B3E8A623232E7100C1F970 /* Networking */,
 			);
 			path = "I Have More Money Than";
 			sourceTree = "<group>";
@@ -175,6 +178,14 @@
 				60B3E8A1232309FC00C1F970 /* Helpers.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		60B3E8A623232E7100C1F970 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				60B3E8A723232F2F00C1F970 /* NetworkManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +323,7 @@
 				60B3E8A2232309FC00C1F970 /* Helpers.swift in Sources */,
 				60B3E86B2322FAB200C1F970 /* HomeViewController.swift in Sources */,
 				60B3E89D232302AB00C1F970 /* AccountCell.swift in Sources */,
+				60B3E8A823232F2F00C1F970 /* NetworkManager.swift in Sources */,
 				60B3E89B2323020200C1F970 /* BaseCell.swift in Sources */,
 				60B3E8692322FAB200C1F970 /* AppDelegate.swift in Sources */,
 			);

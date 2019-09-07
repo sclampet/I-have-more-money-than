@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Account {
+struct Account: Decodable {
     let id: Int
     let name: String
     let imageName: String
