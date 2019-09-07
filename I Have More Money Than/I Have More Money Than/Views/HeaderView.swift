@@ -9,9 +9,22 @@
 import UIKit
 
 class HeaderView: UICollectionReusableView {
+    
+    let titleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Accounts that make less than you do"
+        label.font = UIFont.boldSystemFont(ofSize: 30)
+        label.numberOfLines = 2
+        label.lineBreakMode = .byWordWrapping
+        return label
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .red
+        addSubview(titleLabel)
+        
+        addConstraintsWithFormat(format: "V:|[v0]|", views: titleLabel)
+        addConstraintsWithFormat(format: "H:|-22-[v0]-36-|", views: titleLabel)
     }
     
     required init?(coder aDecoder: NSCoder) {
