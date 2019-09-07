@@ -25,7 +25,9 @@ I built the UI programmatically, used URLSession to pull in the account data fro
 ## Discussion
 I used the following technologies: Swift, XCTest, UIKit, SVProgressHUD
 
-I'm most proud of the apps easily extended architecture, file organization, and simplistic design. Ultimately where I think this app is lacking is in its testing suit. I feel that more time should be dedicated to creating a more robust test suite overall that would include more e2e tests and more unit testing on my network manager specifically. I did create a mock urlsession class to test that the proper endpoint was being targeted, but I was unable to fully build out a mock network manager to test that the proper data was being returned and handled, and any errors would also be handled appropriately.   
+I'm most proud of the apps easily extended architecture, file organization, and simplistic design. 
+
+Ultimately, where I think this app is lacking is in its testing suit. I feel that more time should be dedicated to creating a more robust test suite overall that would include more e2e tests and more unit testing on my network manager specifically. I did create a mock urlsession class to test that the proper endpoint was being targeted, but I was unable to fully build out a mock network manager to test that the proper data was being returned and handled, and any errors would also be handled appropriately. I was unfortunately short on time and therefore my test suite has suffered.  
 
 ## Demo
 <p align="center">
