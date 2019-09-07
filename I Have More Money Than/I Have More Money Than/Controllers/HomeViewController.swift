@@ -84,7 +84,9 @@ extension HomeViewController {
     
     fileprivate func setupNavBar() {
         if let navBar = navigationController?.navigationBar {
-            navBar.isHidden = true
+            navBar.backgroundColor = .white
+            navBar.shadowImage = UIImage()
+            navBar.isTranslucent = false
         }
     }
     
