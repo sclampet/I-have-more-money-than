@@ -11,14 +11,14 @@ import UIKit
 class HomeViewController: UICollectionViewController {
     
     private let cellId = "cellId"
+    private let headerId = "headerId"
     var accounts: [Account] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.backgroundColor = .white
-        collectionView.register(AccountCell.self, forCellWithReuseIdentifier: cellId)
-        
         fetchAccounts()
+        setupCollectionView()
+        setupNavBar()
     }
 }
 
@@ -66,9 +66,35 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
+//MARK: Header Methods
+extension HomeViewController {
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath)
+        return header
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: view.frame.width, height: 125)
+    }
+}
+
 
 //MARK: Helper Methods
 extension HomeViewController {
+    
+    fileprivate func setupNavBar() {
+        if let navBar = navigationController?.navigationBar {
+            navBar.backgroundColor = .white
+            navBar.shadowImage = UIImage()
+            navBar.isTranslucent = false
+        }
+    }
+    
+    fileprivate func setupCollectionView() {
+        collectionView.backgroundColor = .white
+        collectionView.register(AccountCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
+    }
     
     fileprivate func fetchAccounts() {
         let networkManager = NetworkManager()
@@ -87,7 +113,6 @@ extension HomeViewController {
     }
     
     fileprivate func setBorderAndShadow(on cell: UICollectionViewCell) {
-        
         cell.layer.borderColor = UIColor.gray.cgColor
         cell.layer.borderWidth = 1
         

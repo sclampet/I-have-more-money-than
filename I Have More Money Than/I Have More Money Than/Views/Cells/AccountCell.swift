@@ -16,7 +16,6 @@ class AccountCell: BaseCell {
                 return
             }
             
-
             let color = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1)
             let attributedText = NSMutableAttributedString(string: account.name, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 22, weight: .bold), NSAttributedString.Key.foregroundColor: color])
             
@@ -27,8 +26,8 @@ class AccountCell: BaseCell {
             
             attributedText.append(NSAttributedString(string: "\n\n$\(formattedAmount!)", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20), NSAttributedString.Key.foregroundColor: color]))
 
-            
             textView.attributedText = attributedText
+            imageView.image = UIImage(named: account.name)
         }
     }
     
