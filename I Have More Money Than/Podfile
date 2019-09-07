@@ -6,6 +6,10 @@ target 'I Have More Money Than' do
 
   # Pods for I Have More Money Than
 
+	pod 'SVProgressHUD'
+
+
+
   target 'I Have More Money ThanTests' do
     inherit! :search_paths
     # Pods for testing
