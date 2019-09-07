@@ -60,5 +60,12 @@ class HomeViewControllerTests: XCTestCase {
         
         XCTAssertTrue(cell.imageView.image == UIImage(named: "test"))
     }
+    
+    func testHeaderLabelText() {
+        let header = HeaderView()
+        
+        XCTAssertTrue(header.titleLabel.text == "Accounts")
+        XCTAssertTrue(header.subtitleLabel.text == "Congratulations on being wealthier than the following friends")
+    }
 
 }

@@ -22,18 +22,10 @@
 		60B3E8AC2323F15E00C1F970 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8AB2323F15E00C1F970 /* HeaderView.swift */; };
 		60B3E8B0232432DA00C1F970 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8AF232432DA00C1F970 /* NetworkManagerTests.swift */; };
 		93166BAD1814B3A644C32D41 /* Pods_I_Have_More_Money_Than.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28626E9989DC4348BB51E724 /* Pods_I_Have_More_Money_Than.framework */; };
-		D2C83AF21C76CA794C7673AE /* Pods_I_Have_More_Money_ThanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E978CEFE36186264014B3764 /* Pods_I_Have_More_Money_ThanUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		60B3E87A2322FAB300C1F970 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 60B3E85D2322FAB200C1F970 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 60B3E8642322FAB200C1F970;
-			remoteInfo = "I Have More Money Than";
-		};
-		60B3E8852322FAB300C1F970 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 60B3E85D2322FAB200C1F970 /* Project object */;
 			proxyType = 1;
@@ -56,7 +48,6 @@
 		60B3E8792322FAB300C1F970 /* I Have More Money ThanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "I Have More Money ThanTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B3E87D2322FAB300C1F970 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 		60B3E87F2322FAB300C1F970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		60B3E8842322FAB300C1F970 /* I Have More Money ThanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "I Have More Money ThanUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B3E89A2323020200C1F970 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 		60B3E89C232302AB00C1F970 /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 		60B3E89E2323075800C1F970 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
@@ -89,14 +80,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		60B3E8812322FAB300C1F970 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2C83AF21C76CA794C7673AE /* Pods_I_Have_More_Money_ThanUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -116,7 +99,6 @@
 			children = (
 				60B3E8652322FAB200C1F970 /* I Have More Money Than.app */,
 				60B3E8792322FAB300C1F970 /* I Have More Money ThanTests.xctest */,
-				60B3E8842322FAB300C1F970 /* I Have More Money ThanUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -262,25 +244,6 @@
 			productReference = 60B3E8792322FAB300C1F970 /* I Have More Money ThanTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		60B3E8832322FAB300C1F970 /* I Have More Money ThanUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 60B3E8932322FAB300C1F970 /* Build configuration list for PBXNativeTarget "I Have More Money ThanUITests" */;
-			buildPhases = (
-				F367D7875B691C94CFE89C8D /* [CP] Check Pods Manifest.lock */,
-				60B3E8802322FAB300C1F970 /* Sources */,
-				60B3E8812322FAB300C1F970 /* Frameworks */,
-				60B3E8822322FAB300C1F970 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				60B3E8862322FAB300C1F970 /* PBXTargetDependency */,
-			);
-			name = "I Have More Money ThanUITests";
-			productName = "I Have More Money ThanUITests";
-			productReference = 60B3E8842322FAB300C1F970 /* I Have More Money ThanUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -295,10 +258,6 @@
 						CreatedOnToolsVersion = 10.3;
 					};
 					60B3E8782322FAB300C1F970 = {
-						CreatedOnToolsVersion = 10.3;
-						TestTargetID = 60B3E8642322FAB200C1F970;
-					};
-					60B3E8832322FAB300C1F970 = {
 						CreatedOnToolsVersion = 10.3;
 						TestTargetID = 60B3E8642322FAB200C1F970;
 					};
@@ -319,7 +278,6 @@
 			targets = (
 				60B3E8642322FAB200C1F970 /* I Have More Money Than */,
 				60B3E8782322FAB300C1F970 /* I Have More Money ThanTests */,
-				60B3E8832322FAB300C1F970 /* I Have More Money ThanUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -335,13 +293,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		60B3E8772322FAB300C1F970 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		60B3E8822322FAB300C1F970 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -412,28 +363,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F367D7875B691C94CFE89C8D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-I Have More Money ThanUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -462,13 +391,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		60B3E8802322FAB300C1F970 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -476,11 +398,6 @@
 			isa = PBXTargetDependency;
 			target = 60B3E8642322FAB200C1F970 /* I Have More Money Than */;
 			targetProxy = 60B3E87A2322FAB300C1F970 /* PBXContainerItemProxy */;
-		};
-		60B3E8862322FAB300C1F970 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 60B3E8642322FAB200C1F970 /* I Have More Money Than */;
-			targetProxy = 60B3E8852322FAB300C1F970 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -694,48 +611,6 @@
 			};
 			name = Release;
 		};
-		60B3E8942322FAB300C1F970 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC86A7ADA8B109FE861322FD /* Pods-I Have More Money ThanUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = USHAX9R325;
-				INFOPLIST_FILE = "I Have More Money ThanUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ScottClampet.I-Have-More-Money-ThanUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "I Have More Money Than";
-			};
-			name = Debug;
-		};
-		60B3E8952322FAB300C1F970 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EEE1C738856BA50F71ACADD /* Pods-I Have More Money ThanUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = USHAX9R325;
-				INFOPLIST_FILE = "I Have More Money ThanUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ScottClampet.I-Have-More-Money-ThanUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "I Have More Money Than";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -762,15 +637,6 @@
 			buildConfigurations = (
 				60B3E8912322FAB300C1F970 /* Debug */,
 				60B3E8922322FAB300C1F970 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		60B3E8932322FAB300C1F970 /* Build configuration list for PBXNativeTarget "I Have More Money ThanUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				60B3E8942322FAB300C1F970 /* Debug */,
-				60B3E8952322FAB300C1F970 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
