@@ -8,10 +8,9 @@
 
 import Foundation
 
-struct Account {
+struct Account: Decodable {
     let id: Int
     let name: String
-    let imageName: String
-    let amount: Int
-    let ROI: Int
+    let amount: Double
+    let ROI: Double
 }

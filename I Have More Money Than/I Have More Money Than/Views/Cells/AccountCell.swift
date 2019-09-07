@@ -16,13 +16,16 @@ class AccountCell: BaseCell {
                 return
             }
             
-            imageView.image = UIImage(named: account.imageName)
-            
 
             let color = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1)
             let attributedText = NSMutableAttributedString(string: account.name, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 22, weight: .bold), NSAttributedString.Key.foregroundColor: color])
             
-            attributedText.append(NSAttributedString(string: "\n\n$\(account.amount)", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20), NSAttributedString.Key.foregroundColor: color]))
+            //format amount
+            let numberFormatter = NumberFormatter()
+            numberFormatter.numberStyle = .decimal
+            let formattedAmount = numberFormatter.string(from: NSNumber(value:account.amount))
+            
+            attributedText.append(NSAttributedString(string: "\n\n$\(formattedAmount!)", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20), NSAttributedString.Key.foregroundColor: color]))
 
             
             textView.attributedText = attributedText
@@ -67,5 +70,5 @@ class AccountCell: BaseCell {
         
         addConstraintsWithFormat(format: "H:|[v0]|", views: textView)
     }
-
+    
 }
