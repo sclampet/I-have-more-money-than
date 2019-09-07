@@ -24,7 +24,7 @@ class HeaderView: UICollectionReusableView {
         addSubview(titleLabel)
         
         addConstraintsWithFormat(format: "V:|[v0]|", views: titleLabel)
-        addConstraintsWithFormat(format: "H:|-22-[v0]-36-|", views: titleLabel)
+        addConstraintsWithFormat(format: "H:|-24-[v0]-36-|", views: titleLabel)
     }
     
     required init?(coder aDecoder: NSCoder) {
