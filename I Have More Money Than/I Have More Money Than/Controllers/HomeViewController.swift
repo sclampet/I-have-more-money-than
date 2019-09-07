@@ -11,12 +11,14 @@ import UIKit
 class HomeViewController: UICollectionViewController {
     
     private let cellId = "cellId"
+    private let headerId = "headerId"
     var accounts: [Account] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.backgroundColor = .white
         collectionView.register(AccountCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
         
         fetchAccounts()
     }
@@ -63,6 +65,18 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
             detailsScreen.account = accounts[indexPath.item]
             nav.pushViewController(detailsScreen, animated: true)
         }
+    }
+}
+
+//MARK: Header Methods
+extension HomeViewController {
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath)
+        return header
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: view.frame.width, height: 100)
     }
 }
 
