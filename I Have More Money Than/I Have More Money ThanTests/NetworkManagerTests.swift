@@ -33,12 +33,21 @@ class NetworkManagerTests: XCTestCase {
         XCTAssertEqual(mockURLSession.cachedUrl?.host, "glacial-bayou-77287.herokuapp.com")
     }
     
+    func testExpectedURLPath() {
+        networkManager.getAccounts(from: BaseURL.allAccounts) { (response) in
+            return
+        }
+        
+        XCTAssertEqual(mockURLSession.cachedUrl?.path, "/listAccounts")
+    }
+    
 
 }
 
 class MockURLSession: URLSession {
     
     var cachedUrl: URL?
+    var accounts: [Account]?
     
     override func dataTask(with url: URL, completionHandler: @escaping(Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
         self.cachedUrl = url
