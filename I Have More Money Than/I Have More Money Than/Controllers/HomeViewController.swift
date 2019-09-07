@@ -11,9 +11,12 @@ import SVProgressHUD
 
 class HomeViewController: UICollectionViewController {
     
-    private let cellId = "cellId"
-    private let headerId = "headerId"
+    fileprivate let cellId = "cellId"
+    fileprivate let headerId = "headerId"
+    fileprivate let errorCellId = "errorCellId"
+    
     var accounts: [Account] = []
+    var isError: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,14 +34,22 @@ extension HomeViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return accounts.count
+        return !isError ? accounts.count : 1
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! AccountCell
-        cell.account = accounts[indexPath.item]
-        setBorderAndShadow(on: cell)
-        return cell
+        
+        if isError {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: errorCellId, for: indexPath) as! ErrorCell
+            cell.retryButton.addTarget(self, action: #selector(reloadCollectionView), for: .touchUpInside)
+            return cell
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! AccountCell
+            cell.account = accounts[indexPath.item]
+            setBorderAndShadow(on: cell)
+            return cell
+            
+        }
     }
     
 }
@@ -70,12 +81,12 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
 //MARK: Header Methods
 extension HomeViewController {
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath)
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath) as! HeaderView
         return header
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: view.frame.width, height: 125)
+        return !isError ? CGSize(width: view.frame.width, height: 125) : CGSize.zero
     }
 }
 
@@ -94,6 +105,7 @@ extension HomeViewController {
     fileprivate func setupCollectionView() {
         collectionView.backgroundColor = .white
         collectionView.register(AccountCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView.register(ErrorCell.self, forCellWithReuseIdentifier: errorCellId)
         collectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
     }
     
@@ -106,11 +118,16 @@ extension HomeViewController {
                 SVProgressHUD.dismiss()
                 DispatchQueue.main.async {
                     self.accounts = accountList
+                    self.isError = false
                     self.collectionView.reloadData()
                 }
             case .failure(let err):
                 SVProgressHUD.dismiss()
                 print("failed to fetch accounts: \(err)")
+                DispatchQueue.main.async {
+                    self.isError = true
+                    self.collectionView.reloadData()
+                }
             }
         }
     }
@@ -125,6 +142,10 @@ extension HomeViewController {
         cell.layer.shadowOpacity = 0.7
         cell.layer.masksToBounds = false
         cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
+    }
+    
+    @objc fileprivate func reloadCollectionView() {
+        fetchAccounts()
     }
 }
 

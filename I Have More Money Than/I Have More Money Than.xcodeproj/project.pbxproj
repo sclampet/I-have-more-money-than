@@ -21,6 +21,7 @@
 		60B3E8A823232F2F00C1F970 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8A723232F2F00C1F970 /* NetworkManager.swift */; };
 		60B3E8AC2323F15E00C1F970 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8AB2323F15E00C1F970 /* HeaderView.swift */; };
 		60B3E8B0232432DA00C1F970 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8AF232432DA00C1F970 /* NetworkManagerTests.swift */; };
+		60B3E8BB23244F1900C1F970 /* ErrorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8BA23244F1900C1F970 /* ErrorCell.swift */; };
 		93166BAD1814B3A644C32D41 /* Pods_I_Have_More_Money_Than.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28626E9989DC4348BB51E724 /* Pods_I_Have_More_Money_Than.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		60B3E8A723232F2F00C1F970 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		60B3E8AB2323F15E00C1F970 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		60B3E8AF232432DA00C1F970 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		60B3E8BA23244F1900C1F970 /* ErrorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCell.swift; sourceTree = "<group>"; };
 		8EEE1C738856BA50F71ACADD /* Pods-I Have More Money ThanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I Have More Money ThanUITests.release.xcconfig"; path = "Target Support Files/Pods-I Have More Money ThanUITests/Pods-I Have More Money ThanUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A5C196D9287695FFF061257D /* Pods-I Have More Money Than.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I Have More Money Than.debug.xcconfig"; path = "Target Support Files/Pods-I Have More Money Than/Pods-I Have More Money Than.debug.xcconfig"; sourceTree = "<group>"; };
 		A774AD653FC4A0AE31000A6F /* Pods-I Have More Money ThanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I Have More Money ThanTests.release.xcconfig"; path = "Target Support Files/Pods-I Have More Money ThanTests/Pods-I Have More Money ThanTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			children = (
 				60B3E89A2323020200C1F970 /* BaseCell.swift */,
 				60B3E89C232302AB00C1F970 /* AccountCell.swift */,
+				60B3E8BA23244F1900C1F970 /* ErrorCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				60B3E89D232302AB00C1F970 /* AccountCell.swift in Sources */,
 				60B3E8A823232F2F00C1F970 /* NetworkManager.swift in Sources */,
 				60B3E89B2323020200C1F970 /* BaseCell.swift in Sources */,
+				60B3E8BB23244F1900C1F970 /* ErrorCell.swift in Sources */,
 				60B3E8692322FAB200C1F970 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
