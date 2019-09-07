@@ -42,5 +42,23 @@ class HomeViewControllerTests: XCTestCase {
         
         XCTAssertTrue(detailsScreen.view.backgroundColor == green)
     }
+    
+    func testSetupNavBar() {
+        guard let navBar = homeController.navigationController?.navigationBar else { return }
+        let emptyUIImage = UIImage()
+        
+        XCTAssertTrue(navBar.shadowImage == emptyUIImage)
+        XCTAssertTrue(navBar.backgroundColor == UIColor.white)
+        XCTAssertTrue(navBar.isTranslucent == false)
+    }
+    
+    func testAccountDidSetImageViewImage() {
+        let account = Account(id: 1, name: "test", amount: 12345, ROI: 10)
+        
+        let cell = AccountCell()
+        cell.account = account
+        
+        XCTAssertTrue(cell.imageView.image == UIImage(named: "test"))
+    }
 
 }
