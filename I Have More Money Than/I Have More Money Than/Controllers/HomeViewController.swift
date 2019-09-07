@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class HomeViewController: UICollectionViewController {
     
@@ -98,15 +99,17 @@ extension HomeViewController {
     
     fileprivate func fetchAccounts() {
         let networkManager = NetworkManager()
-        
+        SVProgressHUD.show()
         networkManager.getAccounts(from: BaseURL.allAccounts) { (response) in
             switch response {
             case .success(let accountList):
+                SVProgressHUD.dismiss()
                 DispatchQueue.main.async {
                     self.accounts = accountList
                     self.collectionView.reloadData()
                 }
             case .failure(let err):
+                SVProgressHUD.dismiss()
                 print("failed to fetch accounts \(err)")
             }
         }

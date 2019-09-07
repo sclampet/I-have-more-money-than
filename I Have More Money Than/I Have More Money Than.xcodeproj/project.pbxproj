@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -105,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				60B3E8672322FAB200C1F970 /* I Have More Money Than */,
-				60B3E8A0232309E300C1F970 /* Extensions */,
 				60B3E87C2322FAB300C1F970 /* I Have More Money ThanTests */,
 				60B3E8872322FAB300C1F970 /* I Have More Money ThanUITests */,
 				60B3E8662322FAB200C1F970 /* Products */,
@@ -135,6 +134,7 @@
 				60B3E897232301CE00C1F970 /* Views */,
 				60B3E896232301C600C1F970 /* Controllers */,
 				60B3E8A623232E7100C1F970 /* Networking */,
+				60B3E8A0232309E300C1F970 /* Extensions */,
 			);
 			path = "I Have More Money Than";
 			sourceTree = "<group>";
@@ -218,7 +218,6 @@
 				EC86A7ADA8B109FE861322FD /* Pods-I Have More Money ThanUITests.debug.xcconfig */,
 				8EEE1C738856BA50F71ACADD /* Pods-I Have More Money ThanUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
