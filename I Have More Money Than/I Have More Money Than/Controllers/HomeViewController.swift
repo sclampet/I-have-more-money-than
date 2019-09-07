@@ -66,12 +66,19 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 25, left: 25, bottom: 25, right: 25)
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailsScreen = AccountDetailsViewController()
+        if let nav = navigationController {
+            detailsScreen.account = accounts[indexPath.item]
+            nav.pushViewController(detailsScreen, animated: true)
+        }
+    }
 }
 
 
 //MARK: Helper Methods
 extension HomeViewController {
-
     
     fileprivate func setBorderAndShadow(on cell: UICollectionViewCell) {
 
@@ -81,9 +88,7 @@ extension HomeViewController {
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOffset = CGSize(width: 0, height: 5.0)
         cell.layer.shadowRadius = 4.0
-
         cell.layer.shadowOpacity = 0.7
-
         cell.layer.masksToBounds = false
         cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
     }
