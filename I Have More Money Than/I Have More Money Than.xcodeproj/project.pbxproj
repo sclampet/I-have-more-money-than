@@ -145,8 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				60B3E87D2322FAB300C1F970 /* HomeViewControllerTests.swift */,
-				60B3E87F2322FAB300C1F970 /* Info.plist */,
 				60B3E8AF232432DA00C1F970 /* NetworkManagerTests.swift */,
+				60B3E87F2322FAB300C1F970 /* Info.plist */,
 			);
 			path = "I Have More Money ThanTests";
 			sourceTree = "<group>";

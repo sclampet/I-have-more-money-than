@@ -13,9 +13,14 @@ enum BaseURL: String {
 }
 
 class NetworkManager {
+    var session: URLSession?
     
     func getAccounts(from baseURL: BaseURL, completion: @escaping (Result<[Account], Error>) -> Void) {
         guard let url = URL(string: baseURL.rawValue) else { return }
+        //session for unit testing
+        if let session = session {
+            session.dataTask(with: url) { (_, _, _) in }
+        }
         
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             //error
