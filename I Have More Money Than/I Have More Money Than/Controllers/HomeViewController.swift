@@ -13,7 +13,9 @@ class HomeViewController: UICollectionViewController {
     
     private let cellId = "cellId"
     private let headerId = "headerId"
+    
     var accounts: [Account] = []
+    var isError: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +33,7 @@ extension HomeViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return accounts.count
+        return !isError ? accounts.count : 1
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -70,7 +72,11 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
 //MARK: Header Methods
 extension HomeViewController {
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath)
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath) as! HeaderView
+        if isError {
+            header.titleLabel.text = "There was an issue getting your accounts."
+            header.subtitleLabel.text = "Please check your internet connection."
+        }
         return header
     }
     
@@ -111,6 +117,10 @@ extension HomeViewController {
             case .failure(let err):
                 SVProgressHUD.dismiss()
                 print("failed to fetch accounts: \(err)")
+                DispatchQueue.main.async {
+                    self.isError = true
+                    self.collectionView.reloadData()
+                }
             }
         }
     }

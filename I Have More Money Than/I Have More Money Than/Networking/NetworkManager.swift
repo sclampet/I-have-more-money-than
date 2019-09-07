@@ -9,7 +9,7 @@
 import Foundation
 
 enum BaseURL: String {
-    case allAccounts = "https://glacial-bayou-77287.herokuapp.com/listAccounts"
+    case allAccounts = "https://glacial-bayou-77287.herokuapp.com/listAccountss"
 }
 
 class NetworkManager {
