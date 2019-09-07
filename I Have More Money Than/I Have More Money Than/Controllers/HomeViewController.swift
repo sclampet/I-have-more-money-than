@@ -110,7 +110,7 @@ extension HomeViewController {
                 }
             case .failure(let err):
                 SVProgressHUD.dismiss()
-                print("failed to fetch accounts \(err)")
+                print("failed to fetch accounts: \(err)")
             }
         }
     }
