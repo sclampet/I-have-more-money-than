@@ -24,6 +24,15 @@ class NetworkManagerTests: XCTestCase {
         networkManager = nil
         super.tearDown()
      }
+    
+    func testExpectedURLHost() {
+        networkManager.getAccounts(from: BaseURL.allAccounts) { (response) in
+            return
+        }
+        
+        XCTAssertEqual(mockURLSession.cachedUrl?.host, "glacial-bayou-77287.herokuapp.com")
+    }
+    
 
 }
 
