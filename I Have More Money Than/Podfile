@@ -13,13 +13,11 @@ target 'I Have More Money Than' do
   target 'I Have More Money ThanTests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'SVProgressHUD'
   end
 
   target 'I Have More Money ThanUITests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'SVProgressHUD'
   end
 
 end

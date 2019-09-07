@@ -13,7 +13,6 @@
 		60B3E8702322FAB300C1F970 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60B3E86F2322FAB300C1F970 /* Assets.xcassets */; };
 		60B3E8732322FAB300C1F970 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60B3E8712322FAB300C1F970 /* LaunchScreen.storyboard */; };
 		60B3E87E2322FAB300C1F970 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E87D2322FAB300C1F970 /* HomeViewControllerTests.swift */; };
-		60B3E8892322FAB300C1F970 /* I_Have_More_Money_ThanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8882322FAB300C1F970 /* I_Have_More_Money_ThanUITests.swift */; };
 		60B3E89B2323020200C1F970 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E89A2323020200C1F970 /* BaseCell.swift */; };
 		60B3E89D232302AB00C1F970 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E89C232302AB00C1F970 /* AccountCell.swift */; };
 		60B3E89F2323075800C1F970 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E89E2323075800C1F970 /* Account.swift */; };
@@ -58,8 +57,6 @@
 		60B3E87D2322FAB300C1F970 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 		60B3E87F2322FAB300C1F970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60B3E8842322FAB300C1F970 /* I Have More Money ThanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "I Have More Money ThanUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		60B3E8882322FAB300C1F970 /* I_Have_More_Money_ThanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I_Have_More_Money_ThanUITests.swift; sourceTree = "<group>"; };
-		60B3E88A2322FAB300C1F970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60B3E89A2323020200C1F970 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 		60B3E89C232302AB00C1F970 /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 		60B3E89E2323075800C1F970 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
@@ -108,7 +105,6 @@
 			children = (
 				60B3E8672322FAB200C1F970 /* I Have More Money Than */,
 				60B3E87C2322FAB300C1F970 /* I Have More Money ThanTests */,
-				60B3E8872322FAB300C1F970 /* I Have More Money ThanUITests */,
 				60B3E8662322FAB200C1F970 /* Products */,
 				9A7382408326E8AE85C7C2AE /* Pods */,
 				B5044957619760DF60336494 /* Frameworks */,
@@ -149,15 +145,6 @@
 				60B3E87F2322FAB300C1F970 /* Info.plist */,
 			);
 			path = "I Have More Money ThanTests";
-			sourceTree = "<group>";
-		};
-		60B3E8872322FAB300C1F970 /* I Have More Money ThanUITests */ = {
-			isa = PBXGroup;
-			children = (
-				60B3E8882322FAB300C1F970 /* I_Have_More_Money_ThanUITests.swift */,
-				60B3E88A2322FAB300C1F970 /* Info.plist */,
-			);
-			path = "I Have More Money ThanUITests";
 			sourceTree = "<group>";
 		};
 		60B3E896232301C600C1F970 /* Controllers */ = {
@@ -264,7 +251,6 @@
 				60B3E8752322FAB300C1F970 /* Sources */,
 				60B3E8762322FAB300C1F970 /* Frameworks */,
 				60B3E8772322FAB300C1F970 /* Resources */,
-				BD4D4A27CACA6D857A3A8D68 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -284,7 +270,6 @@
 				60B3E8802322FAB300C1F970 /* Sources */,
 				60B3E8812322FAB300C1F970 /* Frameworks */,
 				60B3E8822322FAB300C1F970 /* Resources */,
-				C50E5096BEE08E4E52359470 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -405,40 +390,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BD4D4A27CACA6D857A3A8D68 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-I Have More Money ThanTests/Pods-I Have More Money ThanTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-I Have More Money ThanTests/Pods-I Have More Money ThanTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-I Have More Money ThanTests/Pods-I Have More Money ThanTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C50E5096BEE08E4E52359470 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-I Have More Money ThanUITests/Pods-I Have More Money ThanUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-I Have More Money ThanUITests/Pods-I Have More Money ThanUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-I Have More Money ThanUITests/Pods-I Have More Money ThanUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		DAC6B6199F059F9B9B79932A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -515,7 +466,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60B3E8892322FAB300C1F970 /* I_Have_More_Money_ThanUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
