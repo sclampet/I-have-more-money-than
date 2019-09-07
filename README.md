@@ -1,3 +1,4 @@
+<img src="images/icon.png" width="50"><br>
 # I Have More Money Than
 By [Scott Clampet](mailto:scott@tao.team)
 
