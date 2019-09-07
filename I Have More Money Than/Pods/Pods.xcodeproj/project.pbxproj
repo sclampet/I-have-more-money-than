@@ -194,6 +194,7 @@
 			sourceTree = "<group>";
 		};
 		B9A3F198D71CF403422FCC88570DF3EE /* Pods-I Have More Money ThanUITests */ = {
+<<<<<<< HEAD
 			isa = PBXGroup;
 			children = (
 				3128DD5856270F46DA0E560B2E78C1AD /* Pods-I Have More Money ThanUITests.modulemap */,
@@ -212,6 +213,26 @@
 		C0978BE1D515AB17D84AF4DDFA754341 /* Pods-I Have More Money Than */ = {
 			isa = PBXGroup;
 			children = (
+=======
+			isa = PBXGroup;
+			children = (
+				3128DD5856270F46DA0E560B2E78C1AD /* Pods-I Have More Money ThanUITests.modulemap */,
+				82C140C7DF0F4480E27B34F578772BD0 /* Pods-I Have More Money ThanUITests-acknowledgements.markdown */,
+				80A06764ADA8D296EDD125D412297DCA /* Pods-I Have More Money ThanUITests-acknowledgements.plist */,
+				DFD4A48270A30584785E5C2FE8854725 /* Pods-I Have More Money ThanUITests-dummy.m */,
+				CA387BC0C131C4A9283254524B41B818 /* Pods-I Have More Money ThanUITests-Info.plist */,
+				FB203D08B8674C4C2914409662AD04EA /* Pods-I Have More Money ThanUITests-umbrella.h */,
+				4A92C911370D37E88AAA5DF070603755 /* Pods-I Have More Money ThanUITests.debug.xcconfig */,
+				4A382E7191035568C1D1515C9BEAE15D /* Pods-I Have More Money ThanUITests.release.xcconfig */,
+			);
+			name = "Pods-I Have More Money ThanUITests";
+			path = "Target Support Files/Pods-I Have More Money ThanUITests";
+			sourceTree = "<group>";
+		};
+		C0978BE1D515AB17D84AF4DDFA754341 /* Pods-I Have More Money Than */ = {
+			isa = PBXGroup;
+			children = (
+>>>>>>> parent of 8a8c044... add initial ui test file
 				8478A0A473B5C5FF0596B4243F594D75 /* Pods-I Have More Money Than.modulemap */,
 				A5F74C44C875236E2B814F32B12F139B /* Pods-I Have More Money Than-acknowledgements.markdown */,
 				94D218C6BD504B14967B218D16DBFEF3 /* Pods-I Have More Money Than-acknowledgements.plist */,
@@ -531,7 +552,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6BC69BA7391C132F819D727ED3A50985 /* Pods-I Have More Money ThanTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -568,7 +589,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 683184FBC7B95B0C9076EE5BBB5CB40F /* Pods-I Have More Money Than.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -841,6 +862,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D33F3F8E8B40F940D3C53C54DB509D46 /* SVProgressHUD.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -914,7 +936,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4A92C911370D37E88AAA5DF070603755 /* Pods-I Have More Money ThanUITests.debug.xcconfig */;
 			buildSettings = {
+<<<<<<< HEAD
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+=======
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+>>>>>>> parent of 8a8c044... add initial ui test file
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
