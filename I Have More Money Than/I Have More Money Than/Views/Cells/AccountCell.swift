@@ -16,7 +16,7 @@ class AccountCell: BaseCell {
                 return
             }
             
-            imageView.image = UIImage(named: account.imageName)
+//            imageView.image = UIImage(named: account.imageName)
             
 
             let color = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1)

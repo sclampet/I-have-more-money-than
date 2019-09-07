@@ -11,7 +11,6 @@ import Foundation
 struct Account: Decodable {
     let id: Int
     let name: String
-    let imageName: String
-    let amount: Int
-    let ROI: Int
+    let amount: Float
+    let ROI: Float
 }
