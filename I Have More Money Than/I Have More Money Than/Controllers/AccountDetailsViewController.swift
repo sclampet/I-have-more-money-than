@@ -35,5 +35,4 @@ class AccountDetailsViewController: UIViewController {
         view.addConstraintsWithFormat(format: "V:|[v0]|", views: amountLabel)
         view.addConstraintsWithFormat(format: "H:|[v0]|", views: amountLabel)
     }
-    
 }
