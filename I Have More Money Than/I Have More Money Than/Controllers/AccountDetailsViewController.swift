@@ -31,6 +31,7 @@ class AccountDetailsViewController: UIViewController {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 50)
         label.textAlignment = .center
+        label.textColor = .white
         return label
     }()
     
@@ -39,6 +40,6 @@ class AccountDetailsViewController: UIViewController {
         view.addSubview(amountLabel)
         
         view.addConstraintsWithFormat(format: "V:|[v0]|", views: amountLabel)
-        view.addConstraintsWithFormat(format: "H:|[v0]|", views: amountLabel)
+        view.addConstraintsWithFormat(format: "H:|-8-[v0]-8-|", views: amountLabel)
     }
 }
