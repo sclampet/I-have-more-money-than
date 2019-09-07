@@ -21,6 +21,7 @@
 		60B3E8A4232320D900C1F970 /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8A3232320D900C1F970 /* AccountDetailsViewController.swift */; };
 		60B3E8A823232F2F00C1F970 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8A723232F2F00C1F970 /* NetworkManager.swift */; };
 		60B3E8AC2323F15E00C1F970 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8AB2323F15E00C1F970 /* HeaderView.swift */; };
+		60B3E8B0232432DA00C1F970 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8AF232432DA00C1F970 /* NetworkManagerTests.swift */; };
 		93166BAD1814B3A644C32D41 /* Pods_I_Have_More_Money_Than.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28626E9989DC4348BB51E724 /* Pods_I_Have_More_Money_Than.framework */; };
 		D2C83AF21C76CA794C7673AE /* Pods_I_Have_More_Money_ThanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E978CEFE36186264014B3764 /* Pods_I_Have_More_Money_ThanUITests.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		60B3E8A3232320D900C1F970 /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
 		60B3E8A723232F2F00C1F970 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		60B3E8AB2323F15E00C1F970 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		60B3E8AF232432DA00C1F970 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		8EEE1C738856BA50F71ACADD /* Pods-I Have More Money ThanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I Have More Money ThanUITests.release.xcconfig"; path = "Target Support Files/Pods-I Have More Money ThanUITests/Pods-I Have More Money ThanUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A5C196D9287695FFF061257D /* Pods-I Have More Money Than.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I Have More Money Than.debug.xcconfig"; path = "Target Support Files/Pods-I Have More Money Than/Pods-I Have More Money Than.debug.xcconfig"; sourceTree = "<group>"; };
 		A774AD653FC4A0AE31000A6F /* Pods-I Have More Money ThanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I Have More Money ThanTests.release.xcconfig"; path = "Target Support Files/Pods-I Have More Money ThanTests/Pods-I Have More Money ThanTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			children = (
 				60B3E87D2322FAB300C1F970 /* HomeViewControllerTests.swift */,
 				60B3E87F2322FAB300C1F970 /* Info.plist */,
+				60B3E8AF232432DA00C1F970 /* NetworkManagerTests.swift */,
 			);
 			path = "I Have More Money ThanTests";
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60B3E8B0232432DA00C1F970 /* NetworkManagerTests.swift in Sources */,
 				60B3E87E2322FAB300C1F970 /* HomeViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
