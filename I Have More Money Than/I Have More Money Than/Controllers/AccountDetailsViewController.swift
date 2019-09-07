@@ -17,7 +17,12 @@ class AccountDetailsViewController: UIViewController {
                 return
             }
             view.backgroundColor = account.ROI > 0 ? green : red
-            amountLabel.text = "$\(account.amount)"
+            
+            //format amount
+            let numberFormatter = NumberFormatter()
+            numberFormatter.numberStyle = .decimal
+            let formattedAmount = numberFormatter.string(from: NSNumber(value:account.amount))
+            amountLabel.text = "$\(formattedAmount!)"
         }
     }
     
