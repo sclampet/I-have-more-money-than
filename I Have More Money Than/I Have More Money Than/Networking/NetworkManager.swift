@@ -17,7 +17,7 @@ class NetworkManager {
     func getAccounts(from baseURL: BaseURL, completion: @escaping (Result<[Account], Error>) -> Void) {
         guard let url = URL(string: baseURL.rawValue) else { return }
         
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             //error
             if let err = error {
                 completion(.failure(err))
@@ -27,11 +27,11 @@ class NetworkManager {
             //success
             do {
                 let accounts = try JSONDecoder().decode([Account].self, from: data!)
-                print(accounts)
                 completion(.success(accounts))
             } catch let jsonError {
                 completion(.failure(jsonError))
             }
-        }.resume()
+        }
+        task.resume()
     }
 }

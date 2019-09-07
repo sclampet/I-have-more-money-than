@@ -11,31 +11,14 @@ import UIKit
 class HomeViewController: UICollectionViewController {
     
     private let cellId = "cellId"
-    let accounts: [Account] = {
-        return [
-            Account(id: 1, name: "Royal Bank of Canada", amount: 234123, ROI: 12),
-            Account(id: 2, name: "Cayman Islands", amount: 5432, ROI: 12),
-            Account(id: 3, name: "Berkshire", amount: 43454345, ROI: -12),
-            Account(id: 4, name: "Real Estate", amount: 234123, ROI: 12),
-            Account(id: 5, name: "Gold Bars", amount: 234122342343, ROI: -12),
-            Account(id: 6, name: "Venture Investments", amount: 123, ROI: 12),
-            Account(id: 7, name: "Stuffed Under Mattress", amount: 234123, ROI: 12),
-            Account(id: 8, name: "Mining", amount: 2343, ROI: 12),
-            Account(id: 9, name: "Antiquities", amount: 234123, ROI: -12),
-        ]
-    }()
-
+    var accounts: [Account] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.backgroundColor = .white
         collectionView.register(AccountCell.self, forCellWithReuseIdentifier: cellId)
         
-        let networkManager = NetworkManager()
-        networkManager.getAccounts(from: BaseURL.allAccounts) { (response) in
-            print("RESPONSE: \(response)")
-        }
-        
-        
+        fetchAccounts()
     }
 }
 
@@ -87,8 +70,24 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
 //MARK: Helper Methods
 extension HomeViewController {
     
+    fileprivate func fetchAccounts() {
+        let networkManager = NetworkManager()
+        
+        networkManager.getAccounts(from: BaseURL.allAccounts) { (response) in
+            switch response {
+            case .success(let accountList):
+                DispatchQueue.main.async {
+                    self.accounts = accountList
+                    self.collectionView.reloadData()
+                }
+            case .failure(let err):
+                print("failed to fetch accounts \(err)")
+            }
+        }
+    }
+    
     fileprivate func setBorderAndShadow(on cell: UICollectionViewCell) {
-
+        
         cell.layer.borderColor = UIColor.gray.cgColor
         cell.layer.borderWidth = 1
         
