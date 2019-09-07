@@ -29,7 +29,7 @@ class AccountDetailsViewController: UIViewController {
     
     let amountLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 50)
+        label.font = UIFont.boldSystemFont(ofSize: 40)
         label.textAlignment = .center
         label.textColor = .white
         return label
