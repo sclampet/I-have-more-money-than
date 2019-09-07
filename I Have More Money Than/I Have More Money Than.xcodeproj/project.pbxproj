@@ -19,6 +19,7 @@
 		60B3E8A2232309FC00C1F970 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8A1232309FC00C1F970 /* Helpers.swift */; };
 		60B3E8A4232320D900C1F970 /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8A3232320D900C1F970 /* AccountDetailsViewController.swift */; };
 		60B3E8A823232F2F00C1F970 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8A723232F2F00C1F970 /* NetworkManager.swift */; };
+		60B3E8AC2323F15E00C1F970 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8AB2323F15E00C1F970 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		60B3E8A1232309FC00C1F970 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		60B3E8A3232320D900C1F970 /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
 		60B3E8A723232F2F00C1F970 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		60B3E8AB2323F15E00C1F970 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				60B3E899232301F200C1F970 /* Cells */,
+				60B3E8AB2323F15E00C1F970 /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60B3E89F2323075800C1F970 /* Account.swift in Sources */,
+				60B3E8AC2323F15E00C1F970 /* HeaderView.swift in Sources */,
 				60B3E8A4232320D900C1F970 /* AccountDetailsViewController.swift in Sources */,
 				60B3E8A2232309FC00C1F970 /* Helpers.swift in Sources */,
 				60B3E86B2322FAB200C1F970 /* HomeViewController.swift in Sources */,
