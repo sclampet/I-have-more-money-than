@@ -9,11 +9,31 @@
 import UIKit
 
 class AccountDetailsViewController: UIViewController {
-    var account: Account?
+    let green = UIColor.rgb(red: 99, green: 216, blue: 99, alpha: 1)
+    let red = UIColor.rgb(red: 255, green: 77, blue: 77, alpha: 1)
+    var account: Account? {
+        didSet {
+            guard let account = account else {
+                return
+            }
+            view.backgroundColor = account.ROI > 0 ? green : red
+            amountLabel.text = "$\(account.amount)"
+        }
+    }
+    
+    let amountLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.boldSystemFont(ofSize: 50)
+        label.textAlignment = .center
+        return label
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .cyan
+        view.addSubview(amountLabel)
+        
+        view.addConstraintsWithFormat(format: "V:|[v0]|", views: amountLabel)
+        view.addConstraintsWithFormat(format: "H:|[v0]|", views: amountLabel)
     }
-
+    
 }
