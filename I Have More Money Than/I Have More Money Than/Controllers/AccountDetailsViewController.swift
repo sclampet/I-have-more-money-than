@@ -36,9 +36,9 @@ class AccountDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(amountLabel)
-        
-        view.addConstraintsWithFormat(format: "V:|[v0]|", views: amountLabel)
-        view.addConstraintsWithFormat(format: "H:|[v0]|", views: amountLabel)
+//        view.addSubview(amountLabel)
+//        
+//        view.addConstraintsWithFormat(format: "V:|[v0]|", views: amountLabel)
+//        view.addConstraintsWithFormat(format: "H:|[v0]|", views: amountLabel)
     }
 }

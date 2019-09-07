@@ -3,48 +3,62 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		05887619C5639C982651B5C82A031E30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
-		075A79B0344DB5A32F71FA193D5B3227 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
 		0CA80ED7E59E6BCE64CEEE649A3C6D2F /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AFEA3CDDA8B73E1CE77E25ABF055E06 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14CF8F039A5DC9F618A51595D0783230 /* Pods-I Have More Money ThanUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD4A48270A30584785E5C2FE8854725 /* Pods-I Have More Money ThanUITests-dummy.m */; };
+		107CE06E2F1413DA83B447239C73209A /* Pods-I Have More Money ThanTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A29102EDC6F68E4C19769B45B21C7C /* Pods-I Have More Money ThanTests-dummy.m */; };
 		264E1A478BDFA31DA6842749C72EA535 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3DE5BA8622C524C0A888514DB6682197 /* SVProgressHUD.bundle */; };
+		2AF28B4B088A02CE3BF3532CDB9B26E1 /* Pods-I Have More Money ThanTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA4EDE14771CE9AAD1A67305992019F /* Pods-I Have More Money ThanTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3392F8407B8C6F47A4E47436894642D8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CE69C069599A4522192CCEBEA2E41761 /* SVProgressHUD.m */; };
-		3D094486D39D60447C448EAE1C94D29D /* Pods-I Have More Money ThanTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 079A21DCBC8E4FDDD19BD6383A050579 /* Pods-I Have More Money ThanTests-dummy.m */; };
-		46535BE9BD2DCC2B7912E981CBA5AEF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
-		577CF376F05E5F4FD68540CCA941F167 /* Pods-I Have More Money Than-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DF1186FCBA29EB7AF48BE1B88305A5 /* Pods-I Have More Money Than-dummy.m */; };
-		7D8F66837D3FC2186B84D9525BCCB63C /* Pods-I Have More Money ThanUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB203D08B8674C4C2914409662AD04EA /* Pods-I Have More Money ThanUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		577CF376F05E5F4FD68540CCA941F167 /* Pods-I Have More Money Than-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D989240D49A99670A9227F818BBD9E79 /* Pods-I Have More Money Than-dummy.m */; };
 		96EADE99073DBA8FCE7904627E2D18EE /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EA2117CD5162FE4D399E9E44C4881FB /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99456829035D2883017E8EBCDB82C231 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */; };
 		9FDEEEE37349769B84A30B0105DFF456 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 329B13A401693A09D000F9FAC3FA05BB /* SVProgressHUD-dummy.m */; };
-		B31D744A5849923DF64B1118E6F59689 /* Pods-I Have More Money ThanTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 220544E45CC3B46F06395BD5A663ABC4 /* Pods-I Have More Money ThanTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5B9915F785CB47C5C07F0B698911B00 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6954634F898848FA9C40A25D50535 /* SVIndefiniteAnimatedView.m */; };
+		C9C15F2FA5F9EB5F424B774B72A0CD63 /* Pods-I Have More Money ThanUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB67ABE0DCD81BB6D6099632E4F0AC7 /* Pods-I Have More Money ThanUITests-dummy.m */; };
+		CB1556DAA179356DA65249F58B7556F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
 		D2246BE5AF9C116D84444CC5C955BC02 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F0B05DCD0A765DB673B753946C0E95 /* SVRadialGradientLayer.m */; };
 		D4914107FF5A197B9D0BC6D1C089E33D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
 		D87B2D5ED73534ACF97CE0A52FA18AE4 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 43008961530BBE6A59C991A593D4CB1D /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCA8D715EF3828E580F27EB74439CC25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
 		DE12057AB8895931A0E9499619C5CFC8 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF342095293272EEC92E98971F299F6A /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEE20D846B1AD83C43D16E64A781DD6D /* Pods-I Have More Money Than-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5E2B6C26F4E9BEE184FA8167EFB5F65 /* Pods-I Have More Money Than-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEE20D846B1AD83C43D16E64A781DD6D /* Pods-I Have More Money Than-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F98FC966D9265E9CA6DBE5DE09AA590 /* Pods-I Have More Money Than-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0186A63060F0EB3676F95CD0ACE0E18 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = E8CF300EA321AFF06300AEC02C1494D9 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEAA1518C49804736C3F40117D064CBE /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DCF879A3F71CD43B7705E20AA42349 /* SVProgressAnimatedView.m */; };
+		F0A467D9007A7FBAC55D394FD9BF25A1 /* Pods-I Have More Money ThanUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7F189E3AB1170E5B9A1CB641492FCB /* Pods-I Have More Money ThanUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		33E7822090B30382710F63A25FF23ED5 /* PBXContainerItemProxy */ = {
+		1FE9A22EAFAD4FCCC021CD0AC746E124 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8D9D3DAC498564E05B1E681B5B214A44;
 			remoteInfo = "Pods-I Have More Money Than";
 		};
-		8C7F991DB69D11AC222FCB8531755975 /* PBXContainerItemProxy */ = {
+		63F3DF54BDD7C9CD405450E73033A210 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C8D67D8B72D6BA42CCEDB648537A340;
+			remoteInfo = SVProgressHUD;
+		};
+		6C5A7F8F6F6A4C2925B90317D8EA825C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8D9D3DAC498564E05B1E681B5B214A44;
 			remoteInfo = "Pods-I Have More Money Than";
+		};
+		7585CE54B2B99A6F91B227243236E6E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C8D67D8B72D6BA42CCEDB648537A340;
+			remoteInfo = SVProgressHUD;
 		};
 		AA1727D268D8FE75D18E4429BE4C332E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -56,61 +70,63 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		079A21DCBC8E4FDDD19BD6383A050579 /* Pods-I Have More Money ThanTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-I Have More Money ThanTests-dummy.m"; sourceTree = "<group>"; };
-		1E6F29C471406AECA70CDB8F2E51A6DD /* Pods-I Have More Money ThanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-I Have More Money ThanTests.release.xcconfig"; sourceTree = "<group>"; };
+		09285A9CCC06485B9700B659FE366258 /* Pods-I Have More Money ThanTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-I Have More Money ThanTests-Info.plist"; sourceTree = "<group>"; };
+		09A29102EDC6F68E4C19769B45B21C7C /* Pods-I Have More Money ThanTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-I Have More Money ThanTests-dummy.m"; sourceTree = "<group>"; };
+		0C88F9629B0E129E92B8177295E023A6 /* Pods-I Have More Money ThanTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-I Have More Money ThanTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1CA4EDE14771CE9AAD1A67305992019F /* Pods-I Have More Money ThanTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-I Have More Money ThanTests-umbrella.h"; sourceTree = "<group>"; };
 		21F19D2E64F9E29C1CD83D0D2B3B5618 /* SVProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SVProgressHUD-Info.plist"; sourceTree = "<group>"; };
-		220544E45CC3B46F06395BD5A663ABC4 /* Pods-I Have More Money ThanTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-I Have More Money ThanTests-umbrella.h"; sourceTree = "<group>"; };
 		2AFEA3CDDA8B73E1CE77E25ABF055E06 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
-		2C89D24B950253E33901397D751BFA1D /* Pods-I Have More Money Than-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-I Have More Money Than-Info.plist"; sourceTree = "<group>"; };
-		3128DD5856270F46DA0E560B2E78C1AD /* Pods-I Have More Money ThanUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-I Have More Money ThanUITests.modulemap"; sourceTree = "<group>"; };
+		2CE0C7CE5C30DD8E88AE31F4EA050DB5 /* Pods-I Have More Money ThanTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-I Have More Money ThanTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		320740E18A30B35E53E5289534DD9615 /* Pods-I Have More Money ThanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-I Have More Money ThanTests.debug.xcconfig"; sourceTree = "<group>"; };
 		329B13A401693A09D000F9FAC3FA05BB /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		352C67C4145E14BB6FAAF7E2E0175E19 /* Pods-I Have More Money ThanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-I Have More Money ThanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3D2BD8FF259FDB88D9CF1C49469D08C7 /* Pods-I Have More Money ThanUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-I Have More Money ThanUITests-frameworks.sh"; sourceTree = "<group>"; };
 		3DE5BA8622C524C0A888514DB6682197 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
 		3EA2117CD5162FE4D399E9E44C4881FB /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		40AE7E9F6647D275FAAAFDA20ED74388 /* Pods-I Have More Money Than.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-I Have More Money Than.release.xcconfig"; sourceTree = "<group>"; };
 		43008961530BBE6A59C991A593D4CB1D /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
-		44DF1186FCBA29EB7AF48BE1B88305A5 /* Pods-I Have More Money Than-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-I Have More Money Than-dummy.m"; sourceTree = "<group>"; };
-		4A382E7191035568C1D1515C9BEAE15D /* Pods-I Have More Money ThanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-I Have More Money ThanUITests.release.xcconfig"; sourceTree = "<group>"; };
-		4A92C911370D37E88AAA5DF070603755 /* Pods-I Have More Money ThanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-I Have More Money ThanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A1AB7D2F22C884AF2901315DF309F0B /* Pods-I Have More Money ThanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-I Have More Money ThanTests.release.xcconfig"; sourceTree = "<group>"; };
+		4B145237CA0D9045C0AB8FB744023421 /* Pods-I Have More Money ThanUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-I Have More Money ThanUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4F245C5B26E007EC3BC619AC3FEE0529 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
 		57DED117F4DBDC2745907EB019F280AB /* Pods_I_Have_More_Money_ThanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_I_Have_More_Money_ThanTests.framework; path = "Pods-I Have More Money ThanTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		680DAED1D494EB88FCD2360ADE78434B /* Pods-I Have More Money ThanTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-I Have More Money ThanTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		683184FBC7B95B0C9076EE5BBB5CB40F /* Pods-I Have More Money Than.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-I Have More Money Than.debug.xcconfig"; sourceTree = "<group>"; };
-		6BC69BA7391C132F819D727ED3A50985 /* Pods-I Have More Money ThanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-I Have More Money ThanTests.debug.xcconfig"; sourceTree = "<group>"; };
-		734DDF778D7F8B0A8E81FB4B61C2B481 /* Pods-I Have More Money Than-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-I Have More Money Than-frameworks.sh"; sourceTree = "<group>"; };
-		743FEAEA8429CEBE92F15224F459D068 /* Pods-I Have More Money ThanTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-I Have More Money ThanTests.modulemap"; sourceTree = "<group>"; };
-		80A06764ADA8D296EDD125D412297DCA /* Pods-I Have More Money ThanUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-I Have More Money ThanUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		82C140C7DF0F4480E27B34F578772BD0 /* Pods-I Have More Money ThanUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-I Have More Money ThanUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		83E5C28DF1A9C576CDB5335E1A4DC1B2 /* Pods-I Have More Money ThanTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-I Have More Money ThanTests-Info.plist"; sourceTree = "<group>"; };
-		8478A0A473B5C5FF0596B4243F594D75 /* Pods-I Have More Money Than.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-I Have More Money Than.modulemap"; sourceTree = "<group>"; };
+		5DE8F8EBEC00F2C19C634E55CD372067 /* Pods-I Have More Money Than.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-I Have More Money Than.modulemap"; sourceTree = "<group>"; };
+		5E3442CC14F0BCA2D16D075A0094CBE5 /* Pods-I Have More Money Than-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-I Have More Money Than-acknowledgements.markdown"; sourceTree = "<group>"; };
+		728C38502968308039AC7F98BC87D653 /* Pods-I Have More Money ThanTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-I Have More Money ThanTests.modulemap"; sourceTree = "<group>"; };
+		740172EB181BB334943D17F3A78ECBB3 /* Pods-I Have More Money ThanUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-I Have More Money ThanUITests.modulemap"; sourceTree = "<group>"; };
 		87F0B05DCD0A765DB673B753946C0E95 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
-		94D218C6BD504B14967B218D16DBFEF3 /* Pods-I Have More Money Than-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-I Have More Money Than-acknowledgements.plist"; sourceTree = "<group>"; };
+		8F7F189E3AB1170E5B9A1CB641492FCB /* Pods-I Have More Money ThanUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-I Have More Money ThanUITests-umbrella.h"; sourceTree = "<group>"; };
+		8F98FC966D9265E9CA6DBE5DE09AA590 /* Pods-I Have More Money Than-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-I Have More Money Than-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A5E2B6C26F4E9BEE184FA8167EFB5F65 /* Pods-I Have More Money Than-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-I Have More Money Than-umbrella.h"; sourceTree = "<group>"; };
-		A5F74C44C875236E2B814F32B12F139B /* Pods-I Have More Money Than-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-I Have More Money Than-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A117F7A903502C1738A7427EE88B383C /* Pods-I Have More Money Than.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-I Have More Money Than.debug.xcconfig"; sourceTree = "<group>"; };
 		AF342095293272EEC92E98971F299F6A /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		AFB67ABE0DCD81BB6D6099632E4F0AC7 /* Pods-I Have More Money ThanUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-I Have More Money ThanUITests-dummy.m"; sourceTree = "<group>"; };
+		B67A816E903A752EF6793A68A3EA292B /* Pods-I Have More Money ThanTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-I Have More Money ThanTests-frameworks.sh"; sourceTree = "<group>"; };
 		BB30D4480098BB5C9F04267942B358C1 /* Pods_I_Have_More_Money_Than.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_I_Have_More_Money_Than.framework; path = "Pods-I Have More Money Than.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF32325B2908E0501F8693E45DF6E5DF /* Pods-I Have More Money ThanTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-I Have More Money ThanTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		CA387BC0C131C4A9283254524B41B818 /* Pods-I Have More Money ThanUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-I Have More Money ThanUITests-Info.plist"; sourceTree = "<group>"; };
+		C0084457FA061E470E130757B8CBBEAE /* Pods-I Have More Money Than-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-I Have More Money Than-acknowledgements.plist"; sourceTree = "<group>"; };
+		C9116D47424B680D992EF642E03152B7 /* Pods-I Have More Money ThanUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-I Have More Money ThanUITests-Info.plist"; sourceTree = "<group>"; };
 		CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		CE69C069599A4522192CCEBEA2E41761 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
 		CEF3EB08703DD0EE36DD094A88FB38AE /* Pods_I_Have_More_Money_ThanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_I_Have_More_Money_ThanUITests.framework; path = "Pods-I Have More Money ThanUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D24B3D2BC7D5C706E205629B89CF7BD4 /* Pods-I Have More Money Than-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-I Have More Money Than-Info.plist"; sourceTree = "<group>"; };
 		D33F3F8E8B40F940D3C53C54DB509D46 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
-		DFD4A48270A30584785E5C2FE8854725 /* Pods-I Have More Money ThanUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-I Have More Money ThanUITests-dummy.m"; sourceTree = "<group>"; };
+		D352F9704FAA7753F84634AEBFC5169D /* Pods-I Have More Money Than.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-I Have More Money Than.release.xcconfig"; sourceTree = "<group>"; };
+		D6576BDA637AA6F2ED8D59A7A9FACF67 /* Pods-I Have More Money ThanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-I Have More Money ThanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D989240D49A99670A9227F818BBD9E79 /* Pods-I Have More Money Than-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-I Have More Money Than-dummy.m"; sourceTree = "<group>"; };
+		DB76034019288A3CDBB30AA76150D36D /* Pods-I Have More Money ThanUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-I Have More Money ThanUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		E8CF300EA321AFF06300AEC02C1494D9 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
 		E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC6954634F898848FA9C40A25D50535 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F3248F7C44DBEB262DFFCFDE05DDA76E /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		F3DCF879A3F71CD43B7705E20AA42349 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
-		FB203D08B8674C4C2914409662AD04EA /* Pods-I Have More Money ThanUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-I Have More Money ThanUITests-umbrella.h"; sourceTree = "<group>"; };
+		FCB1832ECAE986F10FCCE994D5FE058C /* Pods-I Have More Money Than-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-I Have More Money Than-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7DC26F568F42C18322414A77CDE608BE /* Frameworks */ = {
+		8153E98128AAE766937892D2F3636B7D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				075A79B0344DB5A32F71FA193D5B3227 /* Foundation.framework in Frameworks */,
+				DCA8D715EF3828E580F27EB74439CC25 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,33 +147,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2D9E2770DF01EFFC472F0177A06FBFE /* Frameworks */ = {
+		D23E268EDC06DB64A49957DE5B7E78AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46535BE9BD2DCC2B7912E981CBA5AEF2 /* Foundation.framework in Frameworks */,
+				CB1556DAA179356DA65249F58B7556F3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12A3CAC6D9760ED8D23A07024A2EABFE /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C0978BE1D515AB17D84AF4DDFA754341 /* Pods-I Have More Money Than */,
-				9400D565E143384E5BE3A35D4A118437 /* Pods-I Have More Money ThanTests */,
-				B9A3F198D71CF403422FCC88570DF3EE /* Pods-I Have More Money ThanUITests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				6C850C37433B9EAF70AA8EF4EC21FC43 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		287F6A982026B2E90AF6B1F203E7070C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B64B0808787D518D40FCEE17A62D48BD /* Pods-I Have More Money Than */,
+				F58A68007550A4E460416E293A6A7DBF /* Pods-I Have More Money ThanTests */,
+				3AAC29A37074709ADED919078A16E5AF /* Pods-I Have More Money ThanUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3AAC29A37074709ADED919078A16E5AF /* Pods-I Have More Money ThanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				740172EB181BB334943D17F3A78ECBB3 /* Pods-I Have More Money ThanUITests.modulemap */,
+				4B145237CA0D9045C0AB8FB744023421 /* Pods-I Have More Money ThanUITests-acknowledgements.markdown */,
+				DB76034019288A3CDBB30AA76150D36D /* Pods-I Have More Money ThanUITests-acknowledgements.plist */,
+				AFB67ABE0DCD81BB6D6099632E4F0AC7 /* Pods-I Have More Money ThanUITests-dummy.m */,
+				3D2BD8FF259FDB88D9CF1C49469D08C7 /* Pods-I Have More Money ThanUITests-frameworks.sh */,
+				C9116D47424B680D992EF642E03152B7 /* Pods-I Have More Money ThanUITests-Info.plist */,
+				8F7F189E3AB1170E5B9A1CB641492FCB /* Pods-I Have More Money ThanUITests-umbrella.h */,
+				D6576BDA637AA6F2ED8D59A7A9FACF67 /* Pods-I Have More Money ThanUITests.debug.xcconfig */,
+				352C67C4145E14BB6FAAF7E2E0175E19 /* Pods-I Have More Money ThanUITests.release.xcconfig */,
+			);
+			name = "Pods-I Have More Money ThanUITests";
+			path = "Target Support Files/Pods-I Have More Money ThanUITests";
 			sourceTree = "<group>";
 		};
 		6C850C37433B9EAF70AA8EF4EC21FC43 /* iOS */ = {
@@ -169,22 +202,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		9400D565E143384E5BE3A35D4A118437 /* Pods-I Have More Money ThanTests */ = {
-			isa = PBXGroup;
-			children = (
-				743FEAEA8429CEBE92F15224F459D068 /* Pods-I Have More Money ThanTests.modulemap */,
-				680DAED1D494EB88FCD2360ADE78434B /* Pods-I Have More Money ThanTests-acknowledgements.markdown */,
-				BF32325B2908E0501F8693E45DF6E5DF /* Pods-I Have More Money ThanTests-acknowledgements.plist */,
-				079A21DCBC8E4FDDD19BD6383A050579 /* Pods-I Have More Money ThanTests-dummy.m */,
-				83E5C28DF1A9C576CDB5335E1A4DC1B2 /* Pods-I Have More Money ThanTests-Info.plist */,
-				220544E45CC3B46F06395BD5A663ABC4 /* Pods-I Have More Money ThanTests-umbrella.h */,
-				6BC69BA7391C132F819D727ED3A50985 /* Pods-I Have More Money ThanTests.debug.xcconfig */,
-				1E6F29C471406AECA70CDB8F2E51A6DD /* Pods-I Have More Money ThanTests.release.xcconfig */,
-			);
-			name = "Pods-I Have More Money ThanTests";
-			path = "Target Support Files/Pods-I Have More Money ThanTests";
-			sourceTree = "<group>";
-		};
 		96EC1FDA8213EA94182AF633E3DDBC12 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,34 +210,18 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		B9A3F198D71CF403422FCC88570DF3EE /* Pods-I Have More Money ThanUITests */ = {
+		B64B0808787D518D40FCEE17A62D48BD /* Pods-I Have More Money Than */ = {
 			isa = PBXGroup;
 			children = (
-				3128DD5856270F46DA0E560B2E78C1AD /* Pods-I Have More Money ThanUITests.modulemap */,
-				82C140C7DF0F4480E27B34F578772BD0 /* Pods-I Have More Money ThanUITests-acknowledgements.markdown */,
-				80A06764ADA8D296EDD125D412297DCA /* Pods-I Have More Money ThanUITests-acknowledgements.plist */,
-				DFD4A48270A30584785E5C2FE8854725 /* Pods-I Have More Money ThanUITests-dummy.m */,
-				CA387BC0C131C4A9283254524B41B818 /* Pods-I Have More Money ThanUITests-Info.plist */,
-				FB203D08B8674C4C2914409662AD04EA /* Pods-I Have More Money ThanUITests-umbrella.h */,
-				4A92C911370D37E88AAA5DF070603755 /* Pods-I Have More Money ThanUITests.debug.xcconfig */,
-				4A382E7191035568C1D1515C9BEAE15D /* Pods-I Have More Money ThanUITests.release.xcconfig */,
-			);
-			name = "Pods-I Have More Money ThanUITests";
-			path = "Target Support Files/Pods-I Have More Money ThanUITests";
-			sourceTree = "<group>";
-		};
-		C0978BE1D515AB17D84AF4DDFA754341 /* Pods-I Have More Money Than */ = {
-			isa = PBXGroup;
-			children = (
-				8478A0A473B5C5FF0596B4243F594D75 /* Pods-I Have More Money Than.modulemap */,
-				A5F74C44C875236E2B814F32B12F139B /* Pods-I Have More Money Than-acknowledgements.markdown */,
-				94D218C6BD504B14967B218D16DBFEF3 /* Pods-I Have More Money Than-acknowledgements.plist */,
-				44DF1186FCBA29EB7AF48BE1B88305A5 /* Pods-I Have More Money Than-dummy.m */,
-				734DDF778D7F8B0A8E81FB4B61C2B481 /* Pods-I Have More Money Than-frameworks.sh */,
-				2C89D24B950253E33901397D751BFA1D /* Pods-I Have More Money Than-Info.plist */,
-				A5E2B6C26F4E9BEE184FA8167EFB5F65 /* Pods-I Have More Money Than-umbrella.h */,
-				683184FBC7B95B0C9076EE5BBB5CB40F /* Pods-I Have More Money Than.debug.xcconfig */,
-				40AE7E9F6647D275FAAAFDA20ED74388 /* Pods-I Have More Money Than.release.xcconfig */,
+				5DE8F8EBEC00F2C19C634E55CD372067 /* Pods-I Have More Money Than.modulemap */,
+				5E3442CC14F0BCA2D16D075A0094CBE5 /* Pods-I Have More Money Than-acknowledgements.markdown */,
+				C0084457FA061E470E130757B8CBBEAE /* Pods-I Have More Money Than-acknowledgements.plist */,
+				D989240D49A99670A9227F818BBD9E79 /* Pods-I Have More Money Than-dummy.m */,
+				FCB1832ECAE986F10FCCE994D5FE058C /* Pods-I Have More Money Than-frameworks.sh */,
+				D24B3D2BC7D5C706E205629B89CF7BD4 /* Pods-I Have More Money Than-Info.plist */,
+				8F98FC966D9265E9CA6DBE5DE09AA590 /* Pods-I Have More Money Than-umbrella.h */,
+				A117F7A903502C1738A7427EE88B383C /* Pods-I Have More Money Than.debug.xcconfig */,
+				D352F9704FAA7753F84634AEBFC5169D /* Pods-I Have More Money Than.release.xcconfig */,
 			);
 			name = "Pods-I Have More Money Than";
 			path = "Target Support Files/Pods-I Have More Money Than";
@@ -233,7 +234,7 @@
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				D0F28EFC8C9E325880381D586C3CA919 /* Pods */,
 				DE70073A7EC75A41A960EF04A25D1432 /* Products */,
-				12A3CAC6D9760ED8D23A07024A2EABFE /* Targets Support Files */,
+				287F6A982026B2E90AF6B1F203E7070C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -288,6 +289,23 @@
 			path = "../Target Support Files/SVProgressHUD";
 			sourceTree = "<group>";
 		};
+		F58A68007550A4E460416E293A6A7DBF /* Pods-I Have More Money ThanTests */ = {
+			isa = PBXGroup;
+			children = (
+				728C38502968308039AC7F98BC87D653 /* Pods-I Have More Money ThanTests.modulemap */,
+				0C88F9629B0E129E92B8177295E023A6 /* Pods-I Have More Money ThanTests-acknowledgements.markdown */,
+				2CE0C7CE5C30DD8E88AE31F4EA050DB5 /* Pods-I Have More Money ThanTests-acknowledgements.plist */,
+				09A29102EDC6F68E4C19769B45B21C7C /* Pods-I Have More Money ThanTests-dummy.m */,
+				B67A816E903A752EF6793A68A3EA292B /* Pods-I Have More Money ThanTests-frameworks.sh */,
+				09285A9CCC06485B9700B659FE366258 /* Pods-I Have More Money ThanTests-Info.plist */,
+				1CA4EDE14771CE9AAD1A67305992019F /* Pods-I Have More Money ThanTests-umbrella.h */,
+				320740E18A30B35E53E5289534DD9615 /* Pods-I Have More Money ThanTests.debug.xcconfig */,
+				4A1AB7D2F22C884AF2901315DF309F0B /* Pods-I Have More Money ThanTests.release.xcconfig */,
+			);
+			name = "Pods-I Have More Money ThanTests";
+			path = "Target Support Files/Pods-I Have More Money ThanTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -296,6 +314,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEE20D846B1AD83C43D16E64A781DD6D /* Pods-I Have More Money Than-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42A3832A39B7329C7CA334FCAA9229C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A467D9007A7FBAC55D394FD9BF25A1 /* Pods-I Have More Money ThanUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,19 +337,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8E9286569BB571903911D900690D2B30 /* Headers */ = {
+		83E1F54A974E3AD9E605AFA233F3E16C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B31D744A5849923DF64B1118E6F59689 /* Pods-I Have More Money ThanTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C6E566F6B3C0C91B46272CF58FB27B8C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D8F66837D3FC2186B84D9525BCCB63C /* Pods-I Have More Money ThanUITests-umbrella.h in Headers */,
+				2AF28B4B088A02CE3BF3532CDB9B26E1 /* Pods-I Have More Money ThanTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,17 +350,18 @@
 /* Begin PBXNativeTarget section */
 		1680FBC19B1152B973536B2DB6A36351 /* Pods-I Have More Money ThanTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7CA52D864863D0CDC417E052749010BE /* Build configuration list for PBXNativeTarget "Pods-I Have More Money ThanTests" */;
+			buildConfigurationList = 9BEEAC50DB8A6223733B1F97E6C6B18A /* Build configuration list for PBXNativeTarget "Pods-I Have More Money ThanTests" */;
 			buildPhases = (
-				8E9286569BB571903911D900690D2B30 /* Headers */,
-				9A11CDDDA8BB9F2A494535F3955EF01A /* Sources */,
-				7DC26F568F42C18322414A77CDE608BE /* Frameworks */,
-				E2CD091EF8589A42A83606C95389BD7C /* Resources */,
+				83E1F54A974E3AD9E605AFA233F3E16C /* Headers */,
+				4F5AAF689C7B5F45ABA88AFEC358A4D9 /* Sources */,
+				D23E268EDC06DB64A49957DE5B7E78AA /* Frameworks */,
+				28407A4A76E3845DD0B5F6DC02F4423A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F0810C58BC4A1DC4907D855F827E3115 /* PBXTargetDependency */,
+				220244691E432D981A5BDB7439DC1BFF /* PBXTargetDependency */,
+				557556124F5569D1E1CB76A12A73B057 /* PBXTargetDependency */,
 			);
 			name = "Pods-I Have More Money ThanTests";
 			productName = "Pods-I Have More Money ThanTests";
@@ -388,17 +407,18 @@
 		};
 		DC82515E18381D4973FF7C4FC4D83ED2 /* Pods-I Have More Money ThanUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EF56138D0B4825E638264CF577A6BE88 /* Build configuration list for PBXNativeTarget "Pods-I Have More Money ThanUITests" */;
+			buildConfigurationList = 6B74059FBD79FF9D08A2028430768F71 /* Build configuration list for PBXNativeTarget "Pods-I Have More Money ThanUITests" */;
 			buildPhases = (
-				C6E566F6B3C0C91B46272CF58FB27B8C /* Headers */,
-				77FC17171228B177F2942F35676EE096 /* Sources */,
-				F2D9E2770DF01EFFC472F0177A06FBFE /* Frameworks */,
-				916230D10EAC593FEFAA68299F4599A2 /* Resources */,
+				42A3832A39B7329C7CA334FCAA9229C8 /* Headers */,
+				055AC3D6DD476B958AF215A028875C01 /* Sources */,
+				8153E98128AAE766937892D2F3636B7D /* Frameworks */,
+				53FC1C820DC66DA9900BD8E5ABBA31CB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				371856BBFEF8CDB562131A50CAF8E078 /* PBXTargetDependency */,
+				70A3F4B63B93B7AACE4282B3360AFF8F /* PBXTargetDependency */,
+				219423D053A130486B155E534DC52BE9 /* PBXTargetDependency */,
 			);
 			name = "Pods-I Have More Money ThanUITests";
 			productName = "Pods-I Have More Money ThanUITests";
@@ -415,7 +435,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -435,6 +455,20 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		28407A4A76E3845DD0B5F6DC02F4423A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53FC1C820DC66DA9900BD8E5ABBA31CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75A5003859DD2A26A83FF7653D4730D1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -450,23 +484,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		916230D10EAC593FEFAA68299F4599A2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E2CD091EF8589A42A83606C95389BD7C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		055AC3D6DD476B958AF215A028875C01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C15F2FA5F9EB5F424B774B72A0CD63 /* Pods-I Have More Money ThanUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0E5DDCCC3EC0B9480A92F033C9F32E6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -475,19 +503,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77FC17171228B177F2942F35676EE096 /* Sources */ = {
+		4F5AAF689C7B5F45ABA88AFEC358A4D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14CF8F039A5DC9F618A51595D0783230 /* Pods-I Have More Money ThanUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9A11CDDDA8BB9F2A494535F3955EF01A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D094486D39D60447C448EAE1C94D29D /* Pods-I Have More Money ThanTests-dummy.m in Sources */,
+				107CE06E2F1413DA83B447239C73209A /* Pods-I Have More Money ThanTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,11 +526,29 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		371856BBFEF8CDB562131A50CAF8E078 /* PBXTargetDependency */ = {
+		219423D053A130486B155E534DC52BE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = 1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */;
+			targetProxy = 63F3DF54BDD7C9CD405450E73033A210 /* PBXContainerItemProxy */;
+		};
+		220244691E432D981A5BDB7439DC1BFF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-I Have More Money Than";
 			target = 8D9D3DAC498564E05B1E681B5B214A44 /* Pods-I Have More Money Than */;
-			targetProxy = 33E7822090B30382710F63A25FF23ED5 /* PBXContainerItemProxy */;
+			targetProxy = 1FE9A22EAFAD4FCCC021CD0AC746E124 /* PBXContainerItemProxy */;
+		};
+		557556124F5569D1E1CB76A12A73B057 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = 1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */;
+			targetProxy = 7585CE54B2B99A6F91B227243236E6E7 /* PBXContainerItemProxy */;
+		};
+		70A3F4B63B93B7AACE4282B3360AFF8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-I Have More Money Than";
+			target = 8D9D3DAC498564E05B1E681B5B214A44 /* Pods-I Have More Money Than */;
+			targetProxy = 6C5A7F8F6F6A4C2925B90317D8EA825C /* PBXContainerItemProxy */;
 		};
 		DA2C11A0374CDA16CCD00966A1DA5F35 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -518,18 +556,12 @@
 			target = 1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */;
 			targetProxy = AA1727D268D8FE75D18E4429BE4C332E /* PBXContainerItemProxy */;
 		};
-		F0810C58BC4A1DC4907D855F827E3115 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-I Have More Money Than";
-			target = 8D9D3DAC498564E05B1E681B5B214A44 /* Pods-I Have More Money Than */;
-			targetProxy = 8C7F991DB69D11AC222FCB8531755975 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0CE1A71E22E976E44661CCAD5D7C4D00 /* Debug */ = {
+		0C4D23EAA7FE0C0B692A67ED92C4CA4A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BC69BA7391C132F819D727ED3A50985 /* Pods-I Have More Money ThanTests.debug.xcconfig */;
+			baseConfigurationReference = 352C67C4145E14BB6FAAF7E2E0175E19 /* Pods-I Have More Money ThanUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -541,7 +573,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-I Have More Money ThanTests/Pods-I Have More Money ThanTests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-I Have More Money ThanUITests/Pods-I Have More Money ThanUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -550,7 +582,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-I Have More Money ThanTests/Pods-I Have More Money ThanTests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-I Have More Money ThanUITests/Pods-I Have More Money ThanUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -559,14 +591,15 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		26F2401AB0C1B8D22AF408974E2BE6C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 683184FBC7B95B0C9076EE5BBB5CB40F /* Pods-I Have More Money Than.debug.xcconfig */;
+			baseConfigurationReference = A117F7A903502C1738A7427EE88B383C /* Pods-I Have More Money Than.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -601,9 +634,9 @@
 			};
 			name = Debug;
 		};
-		634E4115A874E1C4AA975580B9F9D610 /* Release */ = {
+		2E349FB1F8AC7D9C3A26CE3A4CF9656D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E6F29C471406AECA70CDB8F2E51A6DD /* Pods-I Have More Money ThanTests.release.xcconfig */;
+			baseConfigurationReference = 4A1AB7D2F22C884AF2901315DF309F0B /* Pods-I Have More Money ThanTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -638,6 +671,80 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		5C7C0B807672D2117FA29B85C8995E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 320740E18A30B35E53E5289534DD9615 /* Pods-I Have More Money ThanTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-I Have More Money ThanTests/Pods-I Have More Money ThanTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-I Have More Money ThanTests/Pods-I Have More Money ThanTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6B680DB9DA5DC0F004182CC94273458D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6576BDA637AA6F2ED8D59A7A9FACF67 /* Pods-I Have More Money ThanUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-I Have More Money ThanUITests/Pods-I Have More Money ThanUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-I Have More Money ThanUITests/Pods-I Have More Money ThanUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -801,7 +908,7 @@
 		};
 		A60BB42F6001D94C5D79F7C616C20992 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40AE7E9F6647D275FAAAFDA20ED74388 /* Pods-I Have More Money Than.release.xcconfig */;
+			baseConfigurationReference = D352F9704FAA7753F84634AEBFC5169D /* Pods-I Have More Money Than.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -872,81 +979,6 @@
 			};
 			name = Debug;
 		};
-		C262BA9ADEAF4F17F46BAEEC95CD3F45 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A382E7191035568C1D1515C9BEAE15D /* Pods-I Have More Money ThanUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-I Have More Money ThanUITests/Pods-I Have More Money ThanUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-I Have More Money ThanUITests/Pods-I Have More Money ThanUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F46797835E2E08FA86167B1B17B3F1FD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A92C911370D37E88AAA5DF070603755 /* Pods-I Have More Money ThanUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-I Have More Money ThanUITests/Pods-I Have More Money ThanUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-I Have More Money ThanUITests/Pods-I Have More Money ThanUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -959,11 +991,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7CA52D864863D0CDC417E052749010BE /* Build configuration list for PBXNativeTarget "Pods-I Have More Money ThanTests" */ = {
+		6B74059FBD79FF9D08A2028430768F71 /* Build configuration list for PBXNativeTarget "Pods-I Have More Money ThanUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0CE1A71E22E976E44661CCAD5D7C4D00 /* Debug */,
-				634E4115A874E1C4AA975580B9F9D610 /* Release */,
+				6B680DB9DA5DC0F004182CC94273458D /* Debug */,
+				0C4D23EAA7FE0C0B692A67ED92C4CA4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BEEAC50DB8A6223733B1F97E6C6B18A /* Build configuration list for PBXNativeTarget "Pods-I Have More Money ThanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C7C0B807672D2117FA29B85C8995E46 /* Debug */,
+				2E349FB1F8AC7D9C3A26CE3A4CF9656D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -982,15 +1023,6 @@
 			buildConfigurations = (
 				26F2401AB0C1B8D22AF408974E2BE6C7 /* Debug */,
 				A60BB42F6001D94C5D79F7C616C20992 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EF56138D0B4825E638264CF577A6BE88 /* Build configuration list for PBXNativeTarget "Pods-I Have More Money ThanUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F46797835E2E08FA86167B1B17B3F1FD /* Debug */,
-				C262BA9ADEAF4F17F46BAEEC95CD3F45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
