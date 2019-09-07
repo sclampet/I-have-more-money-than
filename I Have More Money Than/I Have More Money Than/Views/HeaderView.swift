@@ -21,7 +21,7 @@ class HeaderView: UICollectionReusableView {
     
     let subtitleLabel: UILabel = {
        let label = UILabel()
-        label.text = "Congratulations on being wealthier than the following friends"
+        label.text = "Congratulations on being wealthier than the following friends."
         label.textColor = .gray
         label.font = UIFont.systemFont(ofSize: 18)
         label.numberOfLines = 2
