@@ -16,11 +16,8 @@ class HomeViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.backgroundColor = .white
-        collectionView.register(AccountCell.self, forCellWithReuseIdentifier: cellId)
-        collectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
-        
         fetchAccounts()
+        setupCollectionView()
     }
 }
 
@@ -83,6 +80,11 @@ extension HomeViewController {
 
 //MARK: Helper Methods
 extension HomeViewController {
+    fileprivate func setupCollectionView() {
+        collectionView.backgroundColor = .white
+        collectionView.register(AccountCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
+    }
     
     fileprivate func fetchAccounts() {
         let networkManager = NetworkManager()
@@ -101,7 +103,6 @@ extension HomeViewController {
     }
     
     fileprivate func setBorderAndShadow(on cell: UICollectionViewCell) {
-        
         cell.layer.borderColor = UIColor.gray.cgColor
         cell.layer.borderWidth = 1
         
