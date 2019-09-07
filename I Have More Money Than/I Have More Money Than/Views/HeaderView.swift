@@ -13,7 +13,7 @@ class HeaderView: UICollectionReusableView {
     let titleLabel: UILabel = {
         let label = UILabel()
         label.text = "Accounts that make less than you do"
-        label.font = UIFont.boldSystemFont(ofSize: 30)
+        label.font = UIFont.boldSystemFont(ofSize: 32)
         label.numberOfLines = 2
         label.lineBreakMode = .byWordWrapping
         return label
