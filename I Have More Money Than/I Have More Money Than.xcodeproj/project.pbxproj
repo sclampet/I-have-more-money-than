@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01826CAD758D774F49A174A5 /* Pods_I_Have_More_Money_ThanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04463E4B0FB97C50196EF556 /* Pods_I_Have_More_Money_ThanTests.framework */; };
 		60B3E8692322FAB200C1F970 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8682322FAB200C1F970 /* AppDelegate.swift */; };
 		60B3E86B2322FAB200C1F970 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E86A2322FAB200C1F970 /* HomeViewController.swift */; };
 		60B3E8702322FAB300C1F970 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60B3E86F2322FAB300C1F970 /* Assets.xcassets */; };
@@ -20,6 +21,8 @@
 		60B3E8A4232320D900C1F970 /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8A3232320D900C1F970 /* AccountDetailsViewController.swift */; };
 		60B3E8A823232F2F00C1F970 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8A723232F2F00C1F970 /* NetworkManager.swift */; };
 		60B3E8AC2323F15E00C1F970 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E8AB2323F15E00C1F970 /* HeaderView.swift */; };
+		93166BAD1814B3A644C32D41 /* Pods_I_Have_More_Money_Than.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28626E9989DC4348BB51E724 /* Pods_I_Have_More_Money_Than.framework */; };
+		D2C83AF21C76CA794C7673AE /* Pods_I_Have_More_Money_ThanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E978CEFE36186264014B3764 /* Pods_I_Have_More_Money_ThanUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04463E4B0FB97C50196EF556 /* Pods_I_Have_More_Money_ThanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_I_Have_More_Money_ThanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A1F1B8D6779D20BB5077727 /* Pods-I Have More Money ThanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I Have More Money ThanTests.debug.xcconfig"; path = "Target Support Files/Pods-I Have More Money ThanTests/Pods-I Have More Money ThanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		28626E9989DC4348BB51E724 /* Pods_I_Have_More_Money_Than.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_I_Have_More_Money_Than.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54F3BDA99E80155EE46FD8B9 /* Pods-I Have More Money Than.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I Have More Money Than.release.xcconfig"; path = "Target Support Files/Pods-I Have More Money Than/Pods-I Have More Money Than.release.xcconfig"; sourceTree = "<group>"; };
 		60B3E8652322FAB200C1F970 /* I Have More Money Than.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "I Have More Money Than.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B3E8682322FAB200C1F970 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60B3E86A2322FAB200C1F970 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +66,11 @@
 		60B3E8A3232320D900C1F970 /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
 		60B3E8A723232F2F00C1F970 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		60B3E8AB2323F15E00C1F970 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		8EEE1C738856BA50F71ACADD /* Pods-I Have More Money ThanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I Have More Money ThanUITests.release.xcconfig"; path = "Target Support Files/Pods-I Have More Money ThanUITests/Pods-I Have More Money ThanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A5C196D9287695FFF061257D /* Pods-I Have More Money Than.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I Have More Money Than.debug.xcconfig"; path = "Target Support Files/Pods-I Have More Money Than/Pods-I Have More Money Than.debug.xcconfig"; sourceTree = "<group>"; };
+		A774AD653FC4A0AE31000A6F /* Pods-I Have More Money ThanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I Have More Money ThanTests.release.xcconfig"; path = "Target Support Files/Pods-I Have More Money ThanTests/Pods-I Have More Money ThanTests.release.xcconfig"; sourceTree = "<group>"; };
+		E978CEFE36186264014B3764 /* Pods_I_Have_More_Money_ThanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_I_Have_More_Money_ThanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC86A7ADA8B109FE861322FD /* Pods-I Have More Money ThanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I Have More Money ThanUITests.debug.xcconfig"; path = "Target Support Files/Pods-I Have More Money ThanUITests/Pods-I Have More Money ThanUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93166BAD1814B3A644C32D41 /* Pods_I_Have_More_Money_Than.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01826CAD758D774F49A174A5 /* Pods_I_Have_More_Money_ThanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2C83AF21C76CA794C7673AE /* Pods_I_Have_More_Money_ThanUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,10 +105,11 @@
 			isa = PBXGroup;
 			children = (
 				60B3E8672322FAB200C1F970 /* I Have More Money Than */,
-				60B3E8A0232309E300C1F970 /* Extensions */,
 				60B3E87C2322FAB300C1F970 /* I Have More Money ThanTests */,
 				60B3E8872322FAB300C1F970 /* I Have More Money ThanUITests */,
 				60B3E8662322FAB200C1F970 /* Products */,
+				9A7382408326E8AE85C7C2AE /* Pods */,
+				B5044957619760DF60336494 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +134,7 @@
 				60B3E897232301CE00C1F970 /* Views */,
 				60B3E896232301C600C1F970 /* Controllers */,
 				60B3E8A623232E7100C1F970 /* Networking */,
+				60B3E8A0232309E300C1F970 /* Extensions */,
 			);
 			path = "I Have More Money Than";
 			sourceTree = "<group>";
@@ -191,6 +208,29 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		9A7382408326E8AE85C7C2AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5C196D9287695FFF061257D /* Pods-I Have More Money Than.debug.xcconfig */,
+				54F3BDA99E80155EE46FD8B9 /* Pods-I Have More Money Than.release.xcconfig */,
+				0A1F1B8D6779D20BB5077727 /* Pods-I Have More Money ThanTests.debug.xcconfig */,
+				A774AD653FC4A0AE31000A6F /* Pods-I Have More Money ThanTests.release.xcconfig */,
+				EC86A7ADA8B109FE861322FD /* Pods-I Have More Money ThanUITests.debug.xcconfig */,
+				8EEE1C738856BA50F71ACADD /* Pods-I Have More Money ThanUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B5044957619760DF60336494 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28626E9989DC4348BB51E724 /* Pods_I_Have_More_Money_Than.framework */,
+				04463E4B0FB97C50196EF556 /* Pods_I_Have_More_Money_ThanTests.framework */,
+				E978CEFE36186264014B3764 /* Pods_I_Have_More_Money_ThanUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -198,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60B3E88D2322FAB300C1F970 /* Build configuration list for PBXNativeTarget "I Have More Money Than" */;
 			buildPhases = (
+				77F1ED8978D2A439DBF57F1F /* [CP] Check Pods Manifest.lock */,
 				60B3E8612322FAB200C1F970 /* Sources */,
 				60B3E8622322FAB200C1F970 /* Frameworks */,
 				60B3E8632322FAB200C1F970 /* Resources */,
+				40DC3BDD2CCD01950ECD27E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,6 +257,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60B3E8902322FAB300C1F970 /* Build configuration list for PBXNativeTarget "I Have More Money ThanTests" */;
 			buildPhases = (
+				DAC6B6199F059F9B9B79932A /* [CP] Check Pods Manifest.lock */,
 				60B3E8752322FAB300C1F970 /* Sources */,
 				60B3E8762322FAB300C1F970 /* Frameworks */,
 				60B3E8772322FAB300C1F970 /* Resources */,
@@ -233,6 +276,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60B3E8932322FAB300C1F970 /* Build configuration list for PBXNativeTarget "I Have More Money ThanUITests" */;
 			buildPhases = (
+				F367D7875B691C94CFE89C8D /* [CP] Check Pods Manifest.lock */,
 				60B3E8802322FAB300C1F970 /* Sources */,
 				60B3E8812322FAB300C1F970 /* Frameworks */,
 				60B3E8822322FAB300C1F970 /* Resources */,
@@ -315,6 +359,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40DC3BDD2CCD01950ECD27E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-I Have More Money Than/Pods-I Have More Money Than-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-I Have More Money Than/Pods-I Have More Money Than-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-I Have More Money Than/Pods-I Have More Money Than-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77F1ED8978D2A439DBF57F1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-I Have More Money Than-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAC6B6199F059F9B9B79932A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-I Have More Money ThanTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F367D7875B691C94CFE89C8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-I Have More Money ThanUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60B3E8612322FAB200C1F970 /* Sources */ = {
@@ -494,6 +624,7 @@
 		};
 		60B3E88E2322FAB300C1F970 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5C196D9287695FFF061257D /* Pods-I Have More Money Than.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -512,6 +643,7 @@
 		};
 		60B3E88F2322FAB300C1F970 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54F3BDA99E80155EE46FD8B9 /* Pods-I Have More Money Than.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +662,7 @@
 		};
 		60B3E8912322FAB300C1F970 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A1F1B8D6779D20BB5077727 /* Pods-I Have More Money ThanTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -551,6 +684,7 @@
 		};
 		60B3E8922322FAB300C1F970 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A774AD653FC4A0AE31000A6F /* Pods-I Have More Money ThanTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -572,6 +706,7 @@
 		};
 		60B3E8942322FAB300C1F970 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC86A7ADA8B109FE861322FD /* Pods-I Have More Money ThanUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -592,6 +727,7 @@
 		};
 		60B3E8952322FAB300C1F970 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EEE1C738856BA50F71ACADD /* Pods-I Have More Money ThanUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
