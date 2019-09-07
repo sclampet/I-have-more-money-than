@@ -11,8 +11,9 @@ import SVProgressHUD
 
 class HomeViewController: UICollectionViewController {
     
-    private let cellId = "cellId"
-    private let headerId = "headerId"
+    fileprivate let cellId = "cellId"
+    fileprivate let headerId = "headerId"
+    fileprivate let errorCellId = "errorCellId"
     
     var accounts: [Account] = []
     var isError: Bool = false
@@ -37,10 +38,17 @@ extension HomeViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! AccountCell
-        cell.account = accounts[indexPath.item]
-        setBorderAndShadow(on: cell)
-        return cell
+        
+        if isError {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: errorCellId, for: indexPath)
+            return cell
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! AccountCell
+            cell.account = accounts[indexPath.item]
+            setBorderAndShadow(on: cell)
+            return cell
+            
+        }
     }
     
 }
@@ -100,6 +108,7 @@ extension HomeViewController {
     fileprivate func setupCollectionView() {
         collectionView.backgroundColor = .white
         collectionView.register(AccountCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView.register(ErrorCell.self, forCellWithReuseIdentifier: errorCellId)
         collectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
     }
     
