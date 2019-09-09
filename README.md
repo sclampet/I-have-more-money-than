@@ -21,14 +21,14 @@ An app for an eccentric Billionaire. He LOVES his money. The only thing he loves
   
 
 ## Specifications
-I built the UI programmatically, used URLSession to pull in the account data from the given endpoint, and used the XCTest framework to write unit tests. There isn't any use of persistent storage since this app only makes use of getting data from a given endpoint. However, I am properly handling the case of receiving an error from my network call by notifying the user in the UI and offering them a chance to "refresh" when they have a better internet connection.
+I built the UI programmatically, used URLSession to pull in the account data from the given endpoint, and used the XCTest framework to write unit tests. There isn't any use of persistent storage since this app only makes use of getting data from a given endpoint. I am also properly handling the case of receiving an error from my network call by notifying the user in the UI and offering them a chance to "refresh" when they have a better internet connection.
 
 ## Discussion
 I used the following technologies: Swift, XCTest, UIKit, SVProgressHUD
 
-I'm most proud of the app's easily extended architecture, file organization, and simplistic design. 
+I'm most proud of the app's easily extended architecture and simplistic design. 
 
-Ultimately, where I think this app is lacking is in its testing suite. I feel that more time should be dedicated to creating a more robust test suite overall that would include more e2e tests and more unit testing on my network manager specifically. I did create a mock urlsession class to test that the proper endpoint was being targeted, but due to the time constraints I decided to place more emphasis on the UI than fully mocking the network manager. I felt that this was a decent tradeoff in this scenario since ultimately this billionaire wants to massage his ego and this first version of the app has a relatively simple network request.  
+Ultimately, where I think this app is lacking is in its testing suite. I feel that more time should be dedicated to creating a more robust test suite overall that would include more e2e tests and more unit testing on my network manager specifically. I did create a mock urlsession class to test that the proper endpoint was being targeted, but due to the time constraints I decided to place more emphasis on the UI rather than fully mocking the network manager. I felt that this was a decent tradeoff in this scenario since ultimately this billionaire wants to massage his ego and this first version of the app has a relatively simple network request.  
 
 ## Demo
 <p align="center">
